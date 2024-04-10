@@ -11,7 +11,7 @@ export default function Experience() {
     return (
         <div style={{alignItems: "center", textAlign:"center", paddingInline:"10vw",
                     backgroundColor: "rgba(156, 164, 166, 1)", color:"#2c2e2e", 
-                    borderRadius: "50pt", height: "95vh",
+                    borderRadius: "50pt", height: "90vh",
         }}
         >
             <h2 className={styles.h1}>Experience</h2>

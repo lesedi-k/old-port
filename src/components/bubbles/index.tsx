@@ -1,19 +1,21 @@
 import { BubbleComponent } from "./types"
+import React, { useEffect } from 'react';
+import styles from "../../page.module.css";
 
 export const Bubble: BubbleComponent = ({Skill, link}) => {
+
     return (
-        <div style={{
-            border: "0.5px solid white", 
-            borderRadius:"50px", 
-            margin: "8px",
-            paddingInline: "16px",
-            paddingBlock: "8px",
-            backgroundColor: "rgba(177, 238, 242, 0.25)"
-        }}
+        <div 
+            id="bubbleDiv"
+            className={link === "" ? styles.bubbleDivNoHref : styles.bubbleDiv}
         >
-            <a href={link}>
+            { link === "" ? 
                 <p style={{fontSize: "14pt"}}>{Skill} </p>
-            </a>
+            :
+                <a href={link}>
+                    <p style={{fontSize: "14pt"}}>{Skill} </p>
+                </a>
+            }
         </div>
     );
 }

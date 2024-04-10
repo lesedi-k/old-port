@@ -142,6 +142,32 @@
   text-wrap: balance;
 }
 
+.bubbleDivNoHref {
+  border: 0.5px solid white;
+  border-radius: 50px;
+  margin: 8px;
+  padding-inline: 16px;
+  padding-block: 8px;
+  background-color: rgba(177, 238, 242, 0.25);
+  transition: background-color 0.3s ease;
+  cursor: default;
+  
+}
+
+.bubbleDiv {
+  border: 0.5px solid white;
+  border-radius: 50px;
+  margin: 8px;
+  padding-inline: 16px;
+  padding-block: 8px;
+  background-color: rgba(177, 238, 242, 0.25);
+  transition: background-color 0.3s ease;
+}
+
+.bubbleDiv:hover {
+  background-color: rgba(248, 248, 248, 0.5);
+}
+
 
 
 /* .center::before {

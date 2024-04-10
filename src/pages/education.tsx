@@ -59,13 +59,13 @@ export default function Education() {
                    }}
         >
             <h1 className={styles.h1}>Education</h1>
-            <h3 style={{fontWeight: 200, fontSize:"20pt"}}>Click to learm more about the course</h3>
 
             <h1 style={{fontSize: "40pt"}}>University of Pennsylvania</h1>
-            <h2 style={{fontSize: "30pt", fontWeight: 300}}>Candidate for Bachelor of Science in Computer Engineering</h2>	
-            <h2 style={{fontSize: "20pt", fontWeight: 600, color:"#2a3a5a"}}>May 2024</h2>
+            <h2 style={{fontSize: "30pt", fontWeight: 300, color:"#dfdfdf"}}>Candidate for Bachelor of Science in Computer Engineering</h2>	
+            <h2 style={{fontSize: "20pt", fontWeight: 600, color:"#eaeaea"}}>May 2024</h2>
             
             <h1 style={{marginTop: "30px", fontSize: "25pt"}}>Relavent Coursework:</h1>
+            <h3 style={{fontWeight: 200, fontSize:"20pt"}}>Click to learm more about the course</h3>
 
             <div style={{
                 display:"flex", 
