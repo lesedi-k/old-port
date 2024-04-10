@@ -22,7 +22,7 @@ export default function About() {
 ]
 
     return (
-        <div style={{marginTop:"16vh", alignItems: "center", textAlign:"center", paddingInline:"10vw", height: "70vh"}}>
+        <div className={styles.slideUp2} style={{marginTop:"16vh", alignItems: "center", textAlign:"center", paddingInline:"10vw", height: "70vh"}}>
             <h1 className={styles.h1} style={{marginBottom:"2vh"}}>Software Engineer</h1>
             <h2 style={{fontSize: "50pt", color:"grey"}}>Lesedi Kereteletswe</h2>
             <div style={{marginBottom: "4vh"}}>

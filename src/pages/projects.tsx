@@ -41,7 +41,7 @@ export default function Projects() {
     return (
         <div style={{alignItems: "center", textAlign:"center", paddingInline:"10vw" ,
             // background: "linear-gradient(to bottom, #1a1a1a, #3b616a)",
-            width:"100%", height: "80vh"
+            width:"100%", height: "75vh"
         }}>
             <h1 className={styles.h1}>Projects</h1>
             

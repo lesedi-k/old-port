@@ -51,16 +51,30 @@ export default function Home() {
   }
 
   function onScroll() {
-    const currentPosition = window.scrollY;  
+    const currentPosition = window.scrollY; 
+    
+    //moves slider
     if (sections && slider) {
-
       sections.forEach((section: HTMLElement) => {
         const sectionTop = section.offsetTop - 100;
         const sectionBottom = sectionTop + section.offsetHeight;
+
+        //section actinations
+        if (currentPosition >= sectionTop - 1000 ) {
+          const sectionId = section.getAttribute('id');
+          if (sectionId === "Experience") {
+            section.classList.add(styles.slideUpper);
+          } else if (sectionId !== "About") {
+            section.classList.add(styles.slideUpHalf);
+          }
+          
+
+        }
     
+        //pick section
         if (currentPosition >= sectionTop && currentPosition <= sectionBottom) {
           const sectionId = section.getAttribute('id');
-
+          
           //move slider
           const targetHeading = document.getElementById(sectionId+"_heading");
           if (targetHeading && headerBar) {
@@ -72,7 +86,6 @@ export default function Home() {
         }
       })
     }
-
   }
 
   window.addEventListener('scroll', () => {
