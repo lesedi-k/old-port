@@ -18,7 +18,7 @@ export default function Experience() {
             <h3 style={{fontWeight: 200, fontSize:"20pt"}}>Learn more about my professional experiences</h3>
 
             <div style={{display:"flex", textAlign:"left", columnGap: 10, marginTop: "5vh",
-                        overflowX:"scroll" ,justifyContent:"flex-start",
+                        overflowX:"scroll" ,justifyContent:"flex-start", scrollbarWidth: "none"
             }}>
                 <Card 
                     Employer={["Partition"]} 

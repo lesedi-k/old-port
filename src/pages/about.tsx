@@ -3,7 +3,6 @@ import "../page.module.css"
 import "../App.css";
 import styles from "../page.module.css"
 import { Bubble } from "../components/bubbles";
-import headshot from "../assets/headshot.png"
 import githubIcon from "../assets/github.png"
 import LinkedInIcon from "../assets/linkedin.webp"
 import MailIcon from "../assets/mail.png"
@@ -25,17 +24,6 @@ export default function About() {
     return (
         <div style={{marginTop:"16vh", alignItems: "center", textAlign:"center", paddingInline:"10vw", height: "70vh"}}>
             <h1 className={styles.h1} style={{marginBottom:"2vh"}}>Software Engineer</h1>
-            {/* <div style={{
-                    overflow:"auto", textWrap:"wrap", marginInline: "7vw", marginTop:"5vh",
-                    display: "flex", justifyItems: "center"
-                }}
-            >
-                <img
-                    src={headshot}
-                    width={200}
-                    alt="Picture of the author"
-                />               
-            </div> */}
 
             <h2 style={{fontSize: "50pt", color:"grey"}}>Lesedi Kereteletswe</h2>
             <div style={{marginBottom: "4vh"}}>
@@ -80,14 +68,17 @@ export default function About() {
 
               
             
-            <div style={{
-                display: "flex", 
-                flexDirection: 'row', 
-                flexWrap: "wrap", 
-                justifyContent:"center",
-                marginTop:"2vh",
-                marginInline: "7vw"
-            }}>
+            <div 
+                className={styles.dotAppear}
+                style={{
+                    display: "flex", 
+                    flexDirection: 'row', 
+                    flexWrap: "wrap", 
+                    justifyContent:"center",
+                    marginTop:"2vh",
+                    marginInline: "7vw"
+                }}
+            >
                 {skills.map((s) => (
                     <Bubble key={s+"_id"} Skill={s} link={""}/>
                 ))}

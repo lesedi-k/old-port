@@ -166,8 +166,11 @@ export default function Home() {
     <>
     <main className={styles.main}>
       <Header Items={Items} 
-        onClick={(event) => scrollToSection(event)}
+          onClick={(event) => scrollToSection(event)}
       />
+      
+      
+      
         
       <div className={styles.center}>
         <section id="About" className={styles.section}>
