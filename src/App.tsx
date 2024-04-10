@@ -50,7 +50,7 @@ export default function Home() {
     setListenerDisabled(false);
   }
 
-  function onScroll(direction : string) {
+  function onScroll() {
     const currentPosition = window.scrollY;  
     if (sections && slider) {
 
@@ -69,80 +69,14 @@ export default function Home() {
             slider.style.left = leftOffest + "px";
             slider.style.width = (targetHeading.getBoundingClientRect().width + 40) + "px";
           }
-          
-
-          //move section
-          // sectionOnScroll(direction);
         }
       })
     }
 
   }
 
-  // function sectionOnScroll(direction : string) {
-  //   if (direction === "down") {
-  //     sectionScrollDown();
-  //   } else {
-  //     sectionScrollUp();
-  //   }
-  // }
-
-  // function sectionScrollUp() {
-  //   const currPosition = window.scrollY; 
-
-  //   if (sections) {
-  //     for (const section of sections) {
-  //       const sectionTop = section.offsetTop;
-  //       const sectionBottom = sectionTop + section.offsetHeight - 10;
-        
-  //       if (currPosition < sectionBottom && currPosition > sectionTop) {
-  //         const sectionId = section.getAttribute('id');
-          
-  //         if (sectionTop) {
-  //           const scrollOptions : ScrollToOptions = {
-  //             top: sectionTop,
-  //             behavior: 'smooth'
-  //           };
-  //           window.scrollTo(scrollOptions);
-  //         }
-
-  //       }
-  //     }
-  //   }
-  // }
-
-  // function sectionScrollDown() {
-  //   const currPosition = window.scrollY; 
-  //   const bottom = currPosition + window.innerHeight - 50;
-
-  //   if (sections) {
-  //     for (const section of sections) {
-  //       const sectionTop = section.offsetTop + 10;
-  //       const sectionBottom = sectionTop + section.offsetHeight;
-        
-  //       if (bottom > sectionTop && bottom < sectionBottom) {
-  //         if (sectionTop) {
-  //           const scrollOptions : ScrollToOptions = {
-  //             top: sectionTop,
-  //             behavior: 'smooth'
-  //           };
-  //           window.scrollTo(scrollOptions);
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
-  let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
   window.addEventListener('scroll', () => {
-
-      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (currentScrollTop > lastScrollTop) {
-        onScroll("down");
-      } else {
-        onScroll("up");
-      }
-      lastScrollTop = currentScrollTop;
+    onScroll();
   });
 
   useEffect(() => {
@@ -155,22 +89,9 @@ export default function Home() {
   useEffect(() => {
   },[selected])
 
-  // useEffect(() => {
-  //   sectionOnScroll("up")
-  // },[currSection])
-
-  
-
-
   return (
-    <>
     <main className={styles.main}>
-      <Header Items={Items} 
-          onClick={(event) => scrollToSection(event)}
-      />
-      
-      
-      
+      <Header Items={Items} onClick={(event) => scrollToSection(event)}/>
         
       <div className={styles.center}>
         <section id="About" className={styles.section}>
@@ -189,9 +110,6 @@ export default function Home() {
           <Education/>
         </section>
       </div>
-
-    </main>
-    </>
-    
+    </main>    
   );
 }
