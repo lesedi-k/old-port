@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState, useEffect, HtmlHTMLAttributes } from 'react'
 import styles from "./page.module.css";
 

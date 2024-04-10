@@ -33,7 +33,7 @@ export default function Projects() {
         {
             Employer: ["IoT VVI Pacemaker"],
             Job: "Embedded Systems Engineer",
-            Description: "Engineered a VVI cardiac pacemaker ",
+            Description: "Engineered a VVI cardiac pacemaker.",
             img: "",
         },
     ]

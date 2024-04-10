@@ -1,4 +1,6 @@
 
+import "../page.module.css"
+import "../App.css";
 import styles from "../page.module.css"
 import { Bubble } from "../components/bubbles";
 import headshot from "../assets/headshot.png"
@@ -28,7 +30,7 @@ export default function About() {
                     display: "flex", justifyItems: "center"
                 }}
             >
-                <Image
+                <img
                     src={headshot}
                     width={200}
                     alt="Picture of the author"
