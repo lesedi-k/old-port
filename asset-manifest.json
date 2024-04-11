@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lesedik/static/css/main.774c09b8.css",
-    "main.js": "/lesedik/static/js/main.2ec0fe5e.js",
+    "main.css": "/lesedik/static/css/main.e6e44b59.css",
+    "main.js": "/lesedik/static/js/main.de2bbc3b.js",
     "static/js/453.ede74042.chunk.js": "/lesedik/static/js/453.ede74042.chunk.js",
     "static/media/wabf.png": "/lesedik/static/media/wabf.343df8b236e0b43a6490.png",
     "static/media/mail.png": "/lesedik/static/media/mail.b59bd8fefe24b2047c80.png",
@@ -11,12 +11,12 @@
     "static/media/partition.png": "/lesedik/static/media/partition.e22a84acd5c3816f99ca.png",
     "static/media/linkedin.webp": "/lesedik/static/media/linkedin.aa0a6b93275c33e6ecab.webp",
     "index.html": "/lesedik/index.html",
-    "main.774c09b8.css.map": "/lesedik/static/css/main.774c09b8.css.map",
-    "main.2ec0fe5e.js.map": "/lesedik/static/js/main.2ec0fe5e.js.map",
+    "main.e6e44b59.css.map": "/lesedik/static/css/main.e6e44b59.css.map",
+    "main.de2bbc3b.js.map": "/lesedik/static/js/main.de2bbc3b.js.map",
     "453.ede74042.chunk.js.map": "/lesedik/static/js/453.ede74042.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.774c09b8.css",
-    "static/js/main.2ec0fe5e.js"
+    "static/css/main.e6e44b59.css",
+    "static/js/main.de2bbc3b.js"
   ]
 }
