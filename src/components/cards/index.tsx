@@ -13,7 +13,8 @@ export const Card: CardComponent = ({Employer, Job, Description, img}) => {
                 flex: "0 0 25%", 
                 margin: "1% 1%" ,
                 textAlign: "center",
-                maxHeight: "50vh"
+                minHeight: "auto",
+                maxHeight: "60vh"
             }}
         >
             {img && 
