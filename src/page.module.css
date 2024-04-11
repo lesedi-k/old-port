@@ -16,7 +16,6 @@
   backdrop-filter: blur(1px);
 }
 
-
 .center {
   display: flex;
   flex-direction: column;
@@ -129,6 +128,10 @@
 
 .h3 {
   font-size: 32px;
+}
+
+.text {
+  color: #ffffff; 
 }
 
 

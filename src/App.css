@@ -13,6 +13,9 @@
   color: white;
 }
 
+.text {
+  color: #ffffff; /* Black color */
+}
 
 :root {
   --max-width: 1100px;

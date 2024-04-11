@@ -11,16 +11,16 @@ export default function Experience() {
     
     return (
         <div 
-            style={{alignItems: "center", textAlign:"center", paddingInline:"10vw",
+            style={{alignItems: "center", textAlign:"center", paddingInline:100,
                     backgroundColor: "rgba(156, 164, 166, 1)", color:"#2c2e2e", 
-                    borderRadius: "50pt", height: "90vh",           
+                    borderRadius: "50pt", minHeight: 800,           
                 }}
         >
-            <div>
+            <div id="experience_div_slide">
                 <h2 className={styles.h1}>Experience</h2>
                 <h3 style={{fontWeight: 200, fontSize:"20pt"}}>Learn more about my professional experiences</h3>
 
-                <div style={{display:"flex", textAlign:"left", columnGap: 10, marginTop: "5vh",
+                <div style={{display:"flex", textAlign:"left", columnGap: 10, marginTop: 50,
                             overflowX:"scroll" ,justifyContent:"flex-start", scrollbarWidth: "none"
                 }}>
                     <Card 

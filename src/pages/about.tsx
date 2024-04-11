@@ -22,10 +22,10 @@ export default function About() {
 ]
 
     return (
-        <div className={styles.slideUp2} style={{marginTop:"16vh", alignItems: "center", textAlign:"center", paddingInline:"10vw", height: "70vh"}}>
-            <h1 className={styles.h1} style={{marginBottom:"2vh"}}>Software Engineer</h1>
+        <div className={styles.slideUp2} style={{marginTop:160, alignItems: "center", textAlign:"center", paddingInline:80, height: 600}}>
+            <h1 className={styles.h1} style={{marginBottom:20}}>Software Engineer</h1>
             <h2 style={{fontSize: "50pt", color:"grey"}}>Lesedi Kereteletswe</h2>
-            <div style={{marginBottom: "4vh"}}>
+            <div style={{marginBottom: 40}}>
                 <a
                     href="https://www.linkedin.com/in/lesedi-kereteletswe/"
                     style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "16pt"}}
@@ -46,7 +46,7 @@ export default function About() {
                    src={githubIcon}
                    width={40}
                    alt="Github Icon"
-                   style={{marginLeft: 30, marginRight:10, filter:"invert(100%)"}}
+                   style={{marginLeft:30, marginRight:10, filter:"invert(100%)"}}
                    />
                    Github
                 </a>
@@ -74,8 +74,8 @@ export default function About() {
                     flexDirection: 'row', 
                     flexWrap: "wrap", 
                     justifyContent:"center",
-                    marginTop:"2vh",
-                    marginInline: "7vw"
+                    marginTop:20,
+                    marginInline: 70
                 }}
             >
                 {skills.map((s) => (

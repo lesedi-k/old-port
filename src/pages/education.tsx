@@ -55,14 +55,14 @@ export default function Education() {
     return (
         <div style={{alignItems: "center", textAlign:"center", paddingInline:"10vw" ,
                         width:"100%", backgroundColor: "#7ebac4", color:"#2c2e2e",
-                        borderRadius: "50pt", height: "85vh",
+                        borderRadius: "50pt", height: 700,
                    }}
         >
             <h1 className={styles.h1}>Education</h1>
 
             <h1 style={{fontSize: "40pt"}}>University of Pennsylvania</h1>
-            <h2 style={{fontSize: "30pt", fontWeight: 300, color:"#dfdfdf"}}>Candidate for Bachelor of Science in Computer Engineering</h2>	
-            <h2 style={{fontSize: "20pt", fontWeight: 600, color:"#eaeaea"}}>May 2024</h2>
+            <h2 style={{fontSize: "30pt", fontWeight: 300, color:"#3f3f3f"}}>Candidate for Bachelor of Science in Computer Engineering</h2>	
+            <h2 style={{fontSize: "20pt", fontWeight: 600, color:"#2a2a2a"}}>May 2024</h2>
             
             <h1 style={{marginTop: "30px", fontSize: "25pt"}}>Relavent Coursework:</h1>
             <h3 style={{fontWeight: 200, fontSize:"20pt"}}>Click to learm more about the course</h3>

@@ -14,7 +14,7 @@ export const Card: CardComponent = ({Employer, Job, Description, img}) => {
                 margin: "1% 1%" ,
                 textAlign: "center",
                 minHeight: "auto",
-                maxHeight: "60vh"
+                maxHeight: 600
             }}
         >
             {img && 

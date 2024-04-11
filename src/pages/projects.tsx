@@ -39,9 +39,9 @@ export default function Projects() {
     ]
     
     return (
-        <div style={{alignItems: "center", textAlign:"center", paddingInline:"10vw" ,
+        <div style={{alignItems: "center", textAlign:"center", paddingInline: 100 , 
             // background: "linear-gradient(to bottom, #1a1a1a, #3b616a)",
-            width:"100%", height: "75vh"
+            paddingTop: 80, width:"100%", height: 800
         }}>
             <h1 className={styles.h1}>Projects</h1>
             
