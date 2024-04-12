@@ -18,8 +18,8 @@ export const ExCard: CardComponent = ({Employer, Job, Description, img}) => {
                 minHeight: "auto",
                 maxHeight: 600,
                 zIndex: 2,
-                boxShadow: "inset 2px 2px 9px rgba(255,255,255, 0.5)",
-                background: "rgba(25, 49, 66, 0.1)",
+                boxShadow: "inset 2px 2px 9px rgba(191, 238, 242, 0.5)",
+                background: "rgba(245, 245, 245, 0.3)",
             }}
         >
             {img && 

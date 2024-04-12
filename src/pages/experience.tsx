@@ -7,7 +7,7 @@ import slice from  "../assets/slice.jpg"
 import cis from  "../assets/seas.png"
 import partiton from  "../assets/partition.png"
 
-import Bg1 from "../components/bg1";
+import Bg2 from "../components/bg1";
 
 export default function Experience() {
 
@@ -45,7 +45,7 @@ export default function Experience() {
                     minHeight: 800,           
                 }}
         >
-            <Bg1/>
+            <Bg2/>
             <div id="experience_div_slide"
                 style={{
                     paddingInline:100,

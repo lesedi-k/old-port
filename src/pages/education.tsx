@@ -1,7 +1,7 @@
 'use client'
 import styles from "../page.module.css"
 import { Bubble } from "../components/bubbles";
-
+import Bg1 from "../components/bg1";
 
 export default function Education() {
 
@@ -53,13 +53,13 @@ export default function Education() {
     ];
 
     return (
-        <div style={{alignItems: "center", textAlign:"center", paddingInline:"10vw" ,
+        <div style={{alignItems: "center", textAlign:"center", paddingInline:100 ,
                     width:"100%", height: 700,
                     color:"#2c2e2e",
                     
                 }}
         >
-
+            <Bg1/>
             <h1 className={styles.h1}>Education</h1>
 
             <h1 style={{fontSize: "40pt"}}>University of Pennsylvania</h1>
