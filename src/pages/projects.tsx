@@ -39,10 +39,13 @@ export default function Projects() {
     ]
     
     return (
-        <div style={{alignItems: "center", textAlign:"center", paddingInline: 100 , 
-            // background: "linear-gradient(to bottom, #1a1a1a, #3b616a)",
-            paddingTop: 80, width:"100%", height: 800
-        }}>
+        <div 
+            className={styles.linearGrad}
+            style={{alignItems: "center", textAlign:"center", paddingInline: 230 , 
+                paddingTop: 80, width:"100%", height: 800,
+                borderRadius: "30px",
+            }}
+        >
             <h1 className={styles.h1}>Projects</h1>
             
             <div style={{
@@ -50,7 +53,7 @@ export default function Projects() {
                 flexDirection: 'row', 
                 flexWrap: "wrap", 
                 justifyContent:"center",
-                marginTop:"2vh"
+                marginTop:"2vh",
             }}>
                 {projects.map((p) => (
                     <Card

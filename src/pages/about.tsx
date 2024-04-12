@@ -22,66 +22,75 @@ export default function About() {
 ]
 
     return (
-        <div className={styles.slideUp2} style={{marginTop:160, alignItems: "center", textAlign:"center", paddingInline:80, height: 600}}>
-            <h1 className={styles.h1} style={{marginBottom:20}}>Software Engineer</h1>
-            <h2 style={{fontSize: "50pt", color:"grey"}}>Lesedi Kereteletswe</h2>
-            <div style={{marginBottom: 40}}>
-                <a
-                    href="https://www.linkedin.com/in/lesedi-kereteletswe/"
-                    style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "16pt"}}
-                >
+        <div className={styles.linearGrad}
+            style={{paddingTop:160, alignItems: "center", 
+                    textAlign:"center", paddingInline:80, height: 760, zIndex: 1,
+                    borderBottomLeftRadius: "30px", borderBottomRightRadius: "30px",
+                    }}
+        >
+            <div className={styles.slideUp2}>
+                <h1 className={styles.h1}>Lesedi Kereteletswe</h1>
+                <h2 style={{fontSize: "50pt", color:"grey", marginBottom:20}}>Software Engineer</h2>
+                <div style={{marginBottom: 40}}>
+                    <a
+                        href="https://www.linkedin.com/in/lesedi-kereteletswe/"
+                        style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "16pt"}}
+                    >
+                        <img
+                        src={LinkedInIcon}
+                        width={40}
+                        alt="LinkedIn Icon"
+                        style={{marginRight:10}}
+                    />
+                    LinkedIn
+                    </a>
+                    <a 
+                        href="https://github.com/lesedi-k"
+                        style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "16pt"}}
+                    >
                     <img
-                    src={LinkedInIcon}
+                    src={githubIcon}
                     width={40}
-                    alt="LinkedIn Icon"
-                    style={{marginRight:10}}
-                   />
-                   LinkedIn
-                </a>
-                <a 
-                    href="https://github.com/lesedi-k"
-                    style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "16pt"}}
-                >
-                   <img
-                   src={githubIcon}
-                   width={40}
-                   alt="Github Icon"
-                   style={{marginLeft:30, marginRight:10, filter:"invert(100%)"}}
-                   />
-                   Github
-                </a>
+                    alt="Github Icon"
+                    style={{marginLeft:30, marginRight:10, filter:"invert(100%)"}}
+                    />
+                    Github
+                    </a>
 
-                <a 
-                    href="mailto:lesedi.kereteletswe@gmail.com"
-                    style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "16pt"}}
+                    <a 
+                        href="mailto:lesedi.kereteletswe@gmail.com"
+                        style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "16pt"}}
+                    >
+                    <img
+                    src={MailIcon}
+                    height={40}
+                    alt="mail"
+                    style={{marginLeft: 30, filter:"invert(100%)"}}
+                    />
+                        Email
+                    </a>
+                </div>
+
+                
+
+                <div 
+                    className={styles.dotAppear}
+                    style={{
+                        display: "flex", 
+                        flexDirection: 'row', 
+                        flexWrap: "wrap", 
+                        justifyContent:"center",
+                        marginTop:20,
+                        marginInline: 70
+                    }}
                 >
-                   <img
-                   src={MailIcon}
-                   height={40}
-                   alt="mail"
-                   style={{marginLeft: 30, filter:"invert(100%)"}}
-                   />
-                    Email
-                </a>
+                    {skills.map((s) => (
+                        <Bubble key={s+"_id"} Skill={s} link={""}/>
+                    ))}
+                </div>
+                
             </div>
-
-              
             
-            <div 
-                className={styles.dotAppear}
-                style={{
-                    display: "flex", 
-                    flexDirection: 'row', 
-                    flexWrap: "wrap", 
-                    justifyContent:"center",
-                    marginTop:20,
-                    marginInline: 70
-                }}
-            >
-                {skills.map((s) => (
-                    <Bubble key={s+"_id"} Skill={s} link={""}/>
-                ))}
-            </div>
             
         </div>
     );

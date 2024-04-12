@@ -63,7 +63,7 @@ export default function Home() {
         if (currentPosition >= sectionTop - 1000 ) {
           const sectionId = section.getAttribute('id');
           if (sectionId === "Experience") {
-            section.classList.add(styles.slideUpper);
+            // section.classList.add(styles.slideUpper);
           } else if (sectionId !== "About") {
             section.classList.add(styles.slideUpHalf);
           }

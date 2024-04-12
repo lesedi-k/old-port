@@ -54,10 +54,12 @@ export default function Education() {
 
     return (
         <div style={{alignItems: "center", textAlign:"center", paddingInline:"10vw" ,
-                        width:"100%", backgroundColor: "#7ebac4", color:"#2c2e2e",
-                        borderRadius: "50pt", height: 700,
-                   }}
+                    width:"100%", height: 700,
+                    color:"#2c2e2e",
+                    
+                }}
         >
+
             <h1 className={styles.h1}>Education</h1>
 
             <h1 style={{fontSize: "40pt"}}>University of Pennsylvania</h1>

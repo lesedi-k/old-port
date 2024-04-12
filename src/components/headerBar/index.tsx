@@ -33,10 +33,11 @@ export const Header: HeaderComponent = ({Items, onClick}) => {
                         width: "100.55px",
                         left: 10,
                         height: "80%",
-                        backgroundColor: "#256c73",
+                        backgroundColor: "rgba(39, 98, 112, 0.69)",
                         position:"absolute",
                         top: "10%",
-                        borderRadius: "30px"
+                        borderRadius: "30px",
+                        boxShadow: "inset 2px 2px 2px rgba(255,255,255, 0.2)"
                     }}
                 />
             </div>
