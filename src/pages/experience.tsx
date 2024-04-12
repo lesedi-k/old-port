@@ -4,7 +4,7 @@ import styles from "../page.module.css"
 import { ExCard } from "../components/cards";
 import wabfIcon from "../assets/wabf.png"
 import slice from  "../assets/slice.jpg"
-import cis from  "../assets/seas.png"
+import cis from  "../assets/penn_eng.png"
 import partiton from  "../assets/partition.png"
 
 import Bg2 from "../components/bg1";
@@ -19,16 +19,16 @@ export default function Experience() {
             img: slice
         },
         {
-            Employer:["University of Pennsylvania","Department of Computer and Information Science" ],
-            Job:"CIS3500: Teaching Assistant",
-            Description: "Managing the team projects, including coordinating team members, setting timelines, and ensuring project goals are achieved within scope and timeline constraints.",
-            img: cis
-        },
-        {
             Employer: ["Wharton Africa Business Forum"],
             Job: "Vice President of Entertainment",
             Description: "Coordinating all aspects of entertainment, performances, and festivites for the US's longest running Africa business conference.",
             img:wabfIcon
+        },
+        {
+            Employer:["University of Pennsylvania","Department of Computer and Information Science" ],
+            Job:"CIS3500: Teaching Assistant",
+            Description: "Managing the team projects, including coordinating team members, setting timelines, and ensuring project goals are achieved within scope and timeline constraints.",
+            img: cis
         },
         {
             Employer: ["Partition"],

@@ -12,22 +12,21 @@ export const ExCard: CardComponent = ({Employer, Job, Description, img}) => {
                 borderRadius:"20px", 
                 paddingInline: "30px",
                 paddingBlock: "20px",
-                flex: "0 0 22%", 
+                flex: "0 0 25%", 
                 margin: "1% 1%" ,
                 textAlign: "center",
                 minHeight: "auto",
                 maxHeight: 600,
                 zIndex: 2,
                 boxShadow: "inset 2px 2px 9px rgba(191, 238, 242, 0.5)",
-                background: "rgba(245, 245, 245, 0.3)",
+                background: "rgba(245, 245, 245, 0.2)",
             }}
         >
             {img && 
                 <img
                     src={img}
-                    height={100}
                     alt="expeirence icon"
-                    style={{alignSelf: "center", marginBottom:"3vh", marginTop:"3vh", borderRadius: "10px", 
+                    style={{maxHeight: 100, maxWidth: 900, alignSelf: "center", marginBottom:"3vh", marginTop:"3vh", borderRadius: "10px", 
                     objectFit:"fill"}}
                 />
             }
