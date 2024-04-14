@@ -6,6 +6,7 @@ export default function Bg1() {
         <div className={styles.bgBlur}
             style={{
                 width: "100vw",
+                zIndex: 0,
             }}
         >
             <div

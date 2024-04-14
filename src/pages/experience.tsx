@@ -4,10 +4,13 @@ import styles from "../page.module.css"
 import { ExCard } from "../components/cards";
 import wabfIcon from "../assets/wabf.png"
 import slice from  "../assets/slice.jpg"
-import cis from  "../assets/penn_eng.png"
+import cis from  "../assets/seas.png"
 import partiton from  "../assets/partition.png"
 
-import Bg2 from "../components/bg1";
+import "swiper/css/effect-coverflow";
+import { Pagination, Autoplay, Parallax, EffectCoverflow} from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 export default function Experience() {
 
@@ -34,39 +37,57 @@ export default function Experience() {
             Employer: ["Partition"],
             Job: "Entrepreneur/ Full-Stack Developer",
             Description:"Developing an AI powered spending planning that makes budgeting an on the go process and incentivizes healthy budgeting practices.",
-            img:partiton
+            img: partiton
         },
     ]
     
     return (
         <div 
+            className={styles.experienceGrad}
             style={{alignItems: "center", textAlign:"center", paddingInline:100,
-                    color:"#2c2e2e", 
-                    minHeight: 800,           
+                    minHeight: 800,  width: "100%"  
                 }}
         >
-            <Bg2/>
-            <div id="experience_div_slide"
-                style={{
-                    paddingInline:100,
-                }}
-            >
+            <div id="experience_div_slide">
                 <h2 className={styles.h1}>Experience</h2>
                 <h3 style={{fontWeight: 200, fontSize:"20pt"}}>Learn more about my professional experiences</h3>
 
                 <div style={{display:"flex", textAlign:"left", columnGap: 3, marginTop: 50,
-                            overflowX:"scroll" ,
-                            justifyContent:"flex-start", scrollbarWidth: "none"
+                            justifyContent:"center", scrollbarWidth: "none", width: "100%",
                 }}>
+                    <Swiper
+                        modules={[EffectCoverflow]}
+                        spaceBetween={40}
+                        slidesPerView={3}
+                        effect="coverflow" // Set the effect to 'coverflow'
+                        coverflowEffect={{
+                            rotate: 30, 
+                            stretch: 0,
+                            depth: 100, 
+                            modifier: 1, 
+                            slideShadows: false,
+                        }}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={() => console.log()}    
+                        style={{
+                            width: "80%"
+                        }}                    
+                    >
+                    <SwiperSlide/>
                     {exp.map((e) => (
-                        <ExCard 
+                        <SwiperSlide>
+                            <ExCard 
                             Employer={e.Employer} 
                             Job={e.Job}
                             Description={e.Description}
                             img={e.img}
-                        />     
+                        />                
+                        </SwiperSlide>    
                     ))}
+                    <SwiperSlide/>
+                    </Swiper>
                 </div>
+                
             
             </div>
         

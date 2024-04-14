@@ -22,10 +22,11 @@ export default function About() {
 ]
 
     return (
-        <div className={styles.linearGrad}
+        <div 
+            className={styles.aboutGrad}
             style={{paddingTop:160, alignItems: "center", 
                     textAlign:"center", paddingInline:80, height: 760, zIndex: 1,
-                    borderBottomLeftRadius: "30px", borderBottomRightRadius: "30px",
+                    // borderBottomLeftRadius: "30px", borderBottomRightRadius: "30px",
                     }}
         >
             <div className={styles.slideUp2}>

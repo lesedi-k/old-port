@@ -108,7 +108,7 @@ export default function Home() {
         
       <div className={styles.center}>
         <section id="About" className={styles.section}>
-          <About/>
+          <About />
         </section>
 
         <section id="Experience" className={styles.section}>
