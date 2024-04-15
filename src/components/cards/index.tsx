@@ -72,8 +72,8 @@ export const Card: CardComponent = ({Employer, Job, Description, img}) => {
             
             <h2> {Employer[0]}{Employer.length > 1 && ","}</h2>
             {Employer.length > 1 && <h2> {Employer[1]} </h2>}
-            <h3 style={{marginBottom: "1vh", fontWeight:300, color:""}}> {Job} </h3>
-            <h3 style={{fontWeight: 500}}> {Description} </h3>
+            <h3 style={{marginBottom: "1vh", fontWeight:500, color:""}}> {Job} </h3>
+            <h3 style={{fontWeight: 300}}> {Description} </h3>
         </div>
     );
 }
