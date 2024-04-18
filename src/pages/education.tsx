@@ -54,9 +54,8 @@ export default function Education() {
 
     return (
         <div 
-            className={styles.educationGrad}
             style={{alignItems: "center", textAlign:"center", paddingInline:100 ,
-                    width:"100%", height: 700,
+                    width:"100%", height: "100vh",  
                 }}
         > 
             <h1 className={styles.h1}>Education</h1>

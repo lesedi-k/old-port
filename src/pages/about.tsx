@@ -15,18 +15,18 @@ export default function About() {
         "Full-stack Development", 
         "Distributed Web Systems Design",
         // "Cross-platform application development", 
-        "Figma",
+        
         "UI/UX Design",
+        "Figma",
         "Java", "Python", "JavaScript", "TypeScript", "HTML", "CSS", "C, C++ & C#", "Kotlin",
         "Next.js", "Node.js", "OCaml", "UPPAAL", 
 ]
 
     return (
         <div 
-            className={styles.aboutGrad}
+            // className={styles.aboutGrad}
             style={{paddingTop:160, alignItems: "center", 
-                    textAlign:"center", paddingInline:80, height: 760, zIndex: 1,
-                    // borderBottomLeftRadius: "30px", borderBottomRightRadius: "30px",
+                    textAlign:"center", paddingInline:80, height: "100vh", zIndex: 1,
                     }}
         >
             <div className={styles.slideUp2}>

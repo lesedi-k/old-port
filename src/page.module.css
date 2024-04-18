@@ -5,6 +5,7 @@
   align-items: center;
   min-height: 100vh;
   width: 100vw;
+  color: "#ffffff"
 }
 
 .headerBack {
@@ -26,7 +27,7 @@
   overflow: hidden;
   position: relative;
   /* background-color: rgb(214, 212, 212);  */
-  background-color:  #040A0D;
+  /* background-color:  #040A0D; */
   /* background: linear-gradient(to bottom, #1a1a1a, #3b616a);  */
 }
 
@@ -35,12 +36,11 @@
   Gradients
 */
 .linearGrad {
-  /* background: linear-gradient(to bottom, #000000, #26454c); */
-  background: linear-gradient(45deg, #0c0c0c, #203134);
+  background: linear-gradient(45deg, #0c0c0c, #397c87);
 }
 
 .cardGrad {
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.08), transparent),
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2), transparent),
                     linear-gradient(-45deg, rgba(255, 255, 255, 0.08), transparent); 
 }
 
@@ -112,7 +112,7 @@
   align-items: center;
   gap: 0.5rem;
   width: 100%;
-  height: "95vh";
+  height: "100vh";
   position: relative;
   /* transition: transform 1s ease; */
 }

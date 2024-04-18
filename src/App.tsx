@@ -10,7 +10,6 @@ import Projects from './pages/projects';
 import Education from './pages/education';
 
 export default function Home() {
-  const [listenerDisabled, setListenerDisabled] = useState(false)
   const [selected, setSelected] = useState("About");
   const [sections, setSections] = useState <NodeListOf<HTMLElement>>();
   const [slider, setSlider] = useState<HTMLElement | null>(null);
@@ -20,8 +19,6 @@ export default function Home() {
   const Items = ["About", "Experience", "Projects", "Education"];
 
   function scrollToSection(sectionId: string) {
-    setListenerDisabled(true);
-
     const targetHeading = document.getElementById(sectionId+"_heading");
     const targetSection = document.getElementById(sectionId);
 
@@ -47,7 +44,6 @@ export default function Home() {
     }
     
     setSelected(sectionId)
-    setListenerDisabled(false);
   }
 
   function onScroll() {
@@ -62,9 +58,7 @@ export default function Home() {
         //section actinations
         if (currentPosition >= sectionTop - 1000 ) {
           const sectionId = section.getAttribute('id');
-          if (sectionId === "Experience") {
-            // section.classList.add(styles.slideUpper);
-          } else if (sectionId !== "About") {
+          if (sectionId !== "About") {
             section.classList.add(styles.slideUpHalf);
           }
           
@@ -105,6 +99,15 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Header Items={Items} onClick={(event) => scrollToSection(event)}/>
+      
+      <div 
+          className={`${styles.aboutGrad}`}
+          style={{position: "fixed", height: "100%", width: "100vw"}}
+      />
+      <div 
+          className={`${styles.educationGrad}`}
+          style={{position: "fixed", height: "100%", width: "100vw", opacity: "30%"}}
+      />
         
       <div className={styles.center}>
         <section id="About" className={styles.section}>

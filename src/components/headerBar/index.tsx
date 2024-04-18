@@ -43,6 +43,6 @@ export const Header: HeaderComponent = ({Items, onClick}) => {
                 />
             </div>
             <div className={styles.blur}/>
-            </>
+        </>
     );
 }

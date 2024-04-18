@@ -19,6 +19,7 @@ export const ExCard: CardComponent = ({Employer, Job, Description, img}) => {
                 textAlign: "center",
                 height: 500,
                 zIndex: 2,
+                color: "#ffffff"
             }}
         >
             {img && 
@@ -32,7 +33,7 @@ export const ExCard: CardComponent = ({Employer, Job, Description, img}) => {
             
             <h2> {Employer[0]}{Employer.length > 1 && ","}</h2>
             {Employer.length > 1 && <h2> {Employer[1]} </h2>}
-            <h3 style={{marginBottom: "1vh", fontWeight:300, color:""}}> {Job} </h3>
+            <h3 style={{marginBottom: "1vh", fontWeight:"bold", color:"#d2f7f5"}}> {Job} </h3>
             <h3 style={{fontWeight: 300, fontSize: "13pt"}}> {Description} </h3>
         </div>
     );

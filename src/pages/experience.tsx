@@ -43,12 +43,13 @@ export default function Experience() {
     
     return (
         <div 
-            className={styles.experienceGrad}
+            // className={styles.experienceGrad}
             style={{alignItems: "center", textAlign:"center", paddingInline:100,
-                    minHeight: 800,  width: "100%"  
+                    height: "100vh",  width: "100%"  
                 }}
         >
-            <div id="experience_div_slide">
+            <div id="experience_div_slide"
+            >
                 <h2 className={styles.h1}>Experience</h2>
                 <h3 style={{fontWeight: 200, fontSize:"20pt"}}>Learn more about my professional experiences</h3>
 
