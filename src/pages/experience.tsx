@@ -57,6 +57,8 @@ export default function Experience() {
                             justifyContent:"center", scrollbarWidth: "none", width: "100%",
                 }}>
                     <Swiper
+                        initialSlide={0}
+                        loop={true}
                         modules={[EffectCoverflow]}
                         spaceBetween={40}
                         slidesPerView={3}
@@ -72,7 +74,8 @@ export default function Experience() {
                         onSwiper={() => console.log()}    
                         style={{
                             width: "80%"
-                        }}                    
+                        }}     
+                        autoplay={{ delay: 3000 }}                
                     >
                     <SwiperSlide/>
                     {exp.map((e) => (
