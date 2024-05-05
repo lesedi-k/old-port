@@ -99,16 +99,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Header Items={Items} onClick={(event) => scrollToSection(event)}/>
-      
-      <div 
-          className={`${styles.aboutGrad}`}
-          style={{position: "fixed", height: "100%", width: "100vw"}}
-      />
-      <div 
-          className={`${styles.educationGrad}`}
-          style={{position: "fixed", height: "100%", width: "100vw", opacity: "30%"}}
-      />
-        
+              
       <div className={styles.center}>
         <section id="About" className={styles.section}>
           <About />

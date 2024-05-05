@@ -40,10 +40,9 @@ export default function Projects() {
     
     return (
         <div 
-        className={`${styles.blackTopRightBottomLeft}`}
+            // className={styles.projectGrad}
             style={{alignItems: "center", textAlign:"center", paddingInline: 230 , 
-                paddingTop: 80, width:"100%", height: "100vh", 
-                borderRadius: 40 
+                paddingTop: 80, width:"100%", height: "100vh",  
             }}
         >
             <h1 className={styles.h1}>Projects</h1>

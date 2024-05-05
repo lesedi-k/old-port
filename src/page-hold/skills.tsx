@@ -15,8 +15,6 @@ export default function Skills() {
         "Next.js", "Node.js", "OCaml", "UPPAAL", 
 ]
 
-
-
     
     return (
         <div style={{alignItems: "center", textAlign:"center", paddingInline: 100 , 

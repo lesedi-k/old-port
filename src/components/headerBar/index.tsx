@@ -6,12 +6,13 @@ export const Header: HeaderComponent = ({Items, onClick}) => {
     return (
         <>
             <div 
+                className={`${styles.cardBlur} ${styles.cardGrad}`}
                 id="headerBar"
                 style={{display:"flex", columnGap: "10px", position:"fixed", width:"60%", zIndex: 3, 
-                    borderRadius:"50px", backgroundColor: "rgba(0, 0, 0, 0.9)",
+                    borderRadius:"50px", 
                     marginTop: "3vh", padding: "20px",
                     justifyContent:"space-between",
-                    boxShadow: "0px 4px 6px rgba(255, 255, 255, 0.1)",  
+                    boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.3)",  
                 }}
             >
                 <div style={{display:"flex", marginLeft: "10px"}}>
@@ -19,7 +20,7 @@ export const Header: HeaderComponent = ({Items, onClick}) => {
                         <p id={i + "_heading"} 
                             key={i + "_heading_id"}
                             onClick={() => onClick(i)} 
-                            style={{zIndex:2, marginRight:"40px", fontSize:"16pt", cursor:"pointer"
+                            style={{zIndex:2, marginRight:"40px", fontSize:"14pt", cursor:"pointer"
                         }}> 
                             {i}
                         </p>
@@ -33,8 +34,7 @@ export const Header: HeaderComponent = ({Items, onClick}) => {
                         width: "100.55px",
                         left: 10,
                         height: "80%",
-                        // backgroundColor: "rgba(39, 98, 112, 0.69)",
-                        backgroundImage: "linear-gradient(-45deg, rgba(39, 98, 112, 0.7), black)",
+                        backgroundColor: "rgba(0,0,0, 0.1)",
                         position:"absolute",
                         top: "10%",
                         borderRadius: "30px",

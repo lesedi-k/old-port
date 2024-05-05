@@ -10,10 +10,10 @@ export const Bubble: BubbleComponent = ({Skill, link}) => {
             className={link === "" ? styles.bubbleDivNoHref : styles.bubbleDiv}
         >
             { link === "" ? 
-                <p style={{fontSize: "14pt"}}>{Skill} </p>
+                <p style={{fontSize: "12pt"}}>{Skill} </p>
             :
                 <a href={link}>
-                    <p style={{fontSize: "14pt"}}>{Skill} </p>
+                    <p style={{fontSize: "12pt"}}>{Skill} </p>
                 </a>
             }
         </div>
