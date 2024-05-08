@@ -18,8 +18,10 @@ export default function Home() {
   const Items = ["About", "Overview", "Experience", "Projects", "Education"];
 
   function scrollToSection(sectionId: string) {
+    
     const targetHeading = document.getElementById(sectionId+"_heading");
     const targetSection = document.getElementById(sectionId);
+    console.log(targetSection)
 
     if (slider && targetHeading && headerBar) {
       //adjust slider position
@@ -57,9 +59,9 @@ export default function Home() {
         //section actinations
         if (currentPosition >= sectionTop - 1000 ) {
           const sectionId = section.getAttribute('id');
-          if (sectionId !== "About") {
-            section.classList.add(styles.slideUpHalf);
-          }
+          // if (sectionId !== "About") {
+          //   section.classList.add(styles.slideUpHalf);
+          // }
         }
     
         //pick section

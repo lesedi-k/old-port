@@ -34,7 +34,7 @@ export default function About() {
 
                     <h1 style={{fontSize: "50pt",  marginTop: 60}}>Lesedi Kereteletswe</h1>
                     <h2 style={{fontSize: "30pt", color:"#9f9f9f", marginBottom: 10}}>Software Engineer</h2>
-                    <p style={{marginBottom:20, textWrap: "wrap", width: "95%"}}>
+                    <p style={{marginBottom:20, textWrap: "wrap", width: "95%", fontSize: "120%"}}>
                         My personal journey with tech.
                         About the goal of contributing to tech products.
                         Learning about the use of smart systems and what computer Engineering menst to
@@ -106,8 +106,9 @@ export default function About() {
             <div 
                 className={`${styles.cardBlur} ${styles.cardGrad}`}
                 style={{
-                    position: "absolute", right: 330, top: 620,
-                    width: 700,
+                    position: "absolute", right: "23%", top: 620,
+                    width: "47%",
+                    // width: 700,
                     display: "flex",
                     flexDirection: "column",
                     textAlign: "left",
@@ -140,7 +141,7 @@ export default function About() {
             <div 
                 className={`${styles.cardBlur} ${styles.cardGrad}`}
                 style={{
-                    position: "absolute", right: 50, top: 150,
+                    position: "absolute", right: "5%", top: 150,
                     width: 450,
                     display: "flex",
                     flexDirection: "column",
