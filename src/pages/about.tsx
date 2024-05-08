@@ -152,7 +152,8 @@ export default function About() {
                     paddingInline: "30px",
                     paddingBlock: "20px",
                     zIndex: 2,
-                    boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
+                    boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)",
+                    backgroundColor: "rgba(0,0,0,0.4)"
                 }}
             >
                 <h1> ... is my contribution to the vision</h1>

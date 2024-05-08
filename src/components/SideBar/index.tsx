@@ -1,27 +1,37 @@
 import { SideComponent } from "./types"
 import styles from "../../page.module.css"
 
-export const SideBar: SideComponent = ({Items, onClick, onScroll}) => {
+export const SideBar: SideComponent = ({Items, onClick, selected}) => {
     return (
         <div style={{display: "flex", flex:1, flexDirection: "column"}}>
                 {Items.map((i, index) => (
                     <div
-                        //onClick
+                        onClick={() => onClick(index)}
                         key={index}
                         style={{
                             flex: 1,
                             cursor: "pointer",
                             display:"flex",
                             flexDirection: "row",
+                            zIndex: 2,
                         }}
                     >
                         <div>
-                            <div style={{ 
-                                backgroundColor: "#a3b1b5", 
-                                boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.3)",  
-                                height: 50, width: 50, 
-                                borderRadius: 50, marginRight: 20
-                            }}/>
+                            <div 
+                                className={`${styles.cardBlur} ${styles.cardGrad}`}
+                                style={{ 
+                                    backgroundColor: index === selected ? "rgba(29, 224, 224, 0.7)":  "", 
+                                    height: 50, width: 50, 
+                                    borderRadius: 50, marginRight: 20,
+                                    borderColor: "white",
+                                    borderStyle: "solid",
+                                    borderWidth: "0.1px 0 0 0.1px",
+                                }}
+                            >
+                                {/* <img src={i.img}
+                                    style={{height: 50, width: 50, borderRadius: 50,}}
+                                /> */}
+                            </div>    
                             { index < Items.length - 1 && <div style={{borderLeft: "1.5px dashed white", height: 50, marginLeft: 25}}/>}
                         </div>
 

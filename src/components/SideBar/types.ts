@@ -8,8 +8,8 @@ type JobInfo = {
 
 type SideProps = {
   Items: JobInfo[];
-  onClick: (name: string) => void;
-  onScroll: (name: string) => void;
+  onClick: (name: number) => void;
+  selected: number;
 }
 
 export type SideComponent = FunctionComponent<SideProps>

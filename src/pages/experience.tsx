@@ -9,9 +9,10 @@ import cis from  "../assets/seas.png"
 import partiton from  "../assets/partition.png"
 
 import { SideBar } from "../components/SideBar";
-import { toHaveDescription } from '@testing-library/jest-dom/matchers';
 
 export default function Experience() {
+    const [selected, setSelected] = useState(0);
+
     const exp = [
         {
             Employer:["Slice HealthTech"],
@@ -44,20 +45,12 @@ export default function Experience() {
             story: "Coming Soon"
         },
     ]
-
-    const [selected, setSelected] = useState(0);
-
-
-    function changeExperience(exp_id: string){
-        //slider 
-
-    }
     
     return (
         <div 
             className={`${styles.blackTopRightBottomLeft}`}
             style={{alignItems: "center", textAlign:"left", paddingInline:100,
-                    height: "100vh",  width: "100%",  
+                    height: "90vh",  width: "100%",  
                 }}
         >
             <div id="experience_div_slide">
@@ -68,8 +61,8 @@ export default function Experience() {
                 <div style={{display: "flex", flexDirection: "row", width: "100%", height: "100%"}}>
                     <SideBar 
                         Items={exp} 
-                        onClick={(event) => changeExperience(event)}
-                        onScroll={(event) => changeExperience(event)}
+                        onClick={(event) => setSelected(event)}
+                        selected={selected}
                     />
                     <div   
                         className={`${styles.cardBlur} ${styles.cardGrad}`} 
@@ -84,14 +77,12 @@ export default function Experience() {
                         }}
                     >
                         <h1>{exp[selected].Employer[0]}</h1>
-                        {exp[selected].Employer.length > 1 && <h1>{exp[selected].Employer[0]}</h1>}
+                        {exp[selected].Employer.length > 1 && <h1>{exp[selected].Employer[1]}</h1>}
                         <h3>{exp[selected].Job}</h3>
                         <p> {exp[selected].story}</p>
                     </div>
                 </div>
-                
             </div>
-        
         </div>
     );
 }
