@@ -21,7 +21,7 @@ export default function About() {
         <div 
             className={`${styles.blackTopRightBottomLeft}`}
             style={{display: "flex", 
-                    width: "100%", height: "100vh", zIndex: 1,
+                    width: "100%", height: "95vh", zIndex: 1,
                 }}
         >
             <div className={styles.slideUp2}
@@ -35,11 +35,11 @@ export default function About() {
                     <h1 style={{fontSize: "50pt",  marginTop: 60}}>Lesedi Kereteletswe</h1>
                     <h2 style={{fontSize: "30pt", color:"#9f9f9f", marginBottom: 10}}>Software Engineer</h2>
                     <p style={{marginBottom:20, textWrap: "wrap", width: "95%", fontSize: "120%"}}>
-                        My personal journey with tech.
-                        About the goal of contributing to tech products.
-                        Learning about the use of smart systems and what computer Engineering menst to
-                        what growing in the space means to me.
-                        The squeezer, the people that motivate the product. The thinking that motivates it all.
+                        In my personal journey with technology, I have been driven by a strong ambition to contribute meaningfully 
+                        to technology that brings us clser to living in a "smart" world. A world where tech is more than a trend, 
+                        it's the vehicle for a easier systems of living.
+                        This journey has led me to delve into the intersection of technology and entrepreneurship,
+                        unveiling the profound potential of technology to profoundly enhance the quality of life for all.
                     </p>
 
                     <div style={{marginBottom: 40}}>
@@ -141,8 +141,8 @@ export default function About() {
             <div 
                 className={`${styles.cardBlur} ${styles.cardGrad}`}
                 style={{
-                    position: "absolute", right: "5%", top: 150,
-                    width: 450,
+                    position: "absolute", right: "10%", top: 120,
+                    width: "35%",
                     display: "flex",
                     flexDirection: "column",
                     textAlign: "left",
@@ -157,8 +157,13 @@ export default function About() {
                     backgroundColor: "rgba(0,0,0,0.4)"
                 }}
             >
-                <h1> ... is my contribution to the vision</h1>
-                <p>Maybe we were special not because of what we were born to do, but what we did.</p>
+                <h3> Building a Product is Like Telling a Story</h3>
+                <p> 
+                    I like to think about the product the story of the challange it wishes to face.
+                    Its story grows with every user interaction, line of code, and product decision,
+                    until we have a living, breathing narrative of innovation and progress, shaped by the challenges the product overcomes, 
+                    the solutions it offers, and the lives it touches.
+                </p>
             </div>
             
         </div>
