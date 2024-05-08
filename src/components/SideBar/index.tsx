@@ -28,9 +28,6 @@ export const SideBar: SideComponent = ({Items, onClick, selected}) => {
                                     borderWidth: "0.1px 0 0 0.1px",
                                 }}
                             >
-                                {/* <img src={i.img}
-                                    style={{height: 50, width: 50, borderRadius: 50,}}
-                                /> */}
                             </div>    
                             { index < Items.length - 1 && <div style={{borderLeft: "1.5px dashed white", height: 50, marginLeft: 25}}/>}
                         </div>

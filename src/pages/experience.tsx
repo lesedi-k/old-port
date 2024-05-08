@@ -18,31 +18,61 @@ export default function Experience() {
             Employer:["Slice HealthTech"],
             Job: "Venture Studio Operator",
             img: slice,
-            story: "Coming Soon"
+
+            title: "The Execution of Product-Mindedness",
+            story: "My work at SLICE HealthTech was centered around the task of taking a broad \
+                    statement regarding data interoperability problems in between healthcare \
+                    facilities and exploring it in its entirety. Then in true entrepreneurial \
+                    fashion—taking the leap to build something out of nothing. My team took \
+                    that problem space we’d worked to build, that system of problems we’d made \
+                    sense of and turned it into the origins of our patient facing solution. \
+                    \n\n\
+                    The joy of the job lies in the task of map-making. I mapped a problem to \
+                    questions, questions to answer finding activities, and those to answers \
+                    that would iteratively lead to market-validated solutions. \
+                    ",
+            solutions: "",
+            photos: "",
         },
         {
             Employer: ["Partition"],
             Job: "Entrepreneur/ Full-Stack Developer",
             img: partiton,
-            story: "Coming Soon"
+            title: "Technological Utility",
+            story: "Coming Soon",
+            challenges: "",
+            solutions: "",
+            photos: "",
         },
         {
             Employer:["University of Pennsylvania","Department of Computer & Information Science" ],
             Job:"CIS 3500: Teaching Assistant",
             img: cis,
-            story: "Coming Soon"
+            title: "People & First Principles",
+            story: "Coming Soon",
+            challenges: "",
+            solutions: "",
+            photos: "",
         },
         {
             Employer:["University of Pennsylvania","Department of Electrical & Systems Engineering" ],
             Job:"ESE 2150: Teaching Assistant",
             img: cis,
-            story: "Coming Soon"
+            title: "The Transfer of Intuition",
+            story: "Coming Soon",
+            challenges: "",
+            solutions: "",
+            photos: "",
         },
         {
             Employer: ["Wharton Africa Business Forum"],
             Job: "Vice President of Entertainment",
             img:wabfIcon,
-            story: "Coming Soon"
+            title: "The Communal Context of Goal Reaching",
+            story: "Coming Soon",
+            challenges: "",
+            solutions: "",
+            photos: "",
         },
     ]
     
@@ -78,8 +108,11 @@ export default function Experience() {
                     >
                         <h1>{exp[selected].Employer[0]}</h1>
                         {exp[selected].Employer.length > 1 && <h1>{exp[selected].Employer[1]}</h1>}
-                        <h3>{exp[selected].Job}</h3>
-                        <p> {exp[selected].story}</p>
+                        <h3 style={{color: "#cffcfc", marginBottom: 10 }}>{exp[selected].Job}</h3>
+
+                        <h3 style={{marginTop: 10}}>{exp[selected].title}</h3>
+                        <p style={{whiteSpace: "pre-line"}}>{exp[selected].story}</p>
+
                     </div>
                 </div>
             </div>
