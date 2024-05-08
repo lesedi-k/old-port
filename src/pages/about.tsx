@@ -3,11 +3,10 @@ import "../page.module.css"
 import "../App.css";
 import styles from "../page.module.css"
 import { Bubble } from "../components/bubbles";
-import { Card } from "../components/cards";
 import githubIcon from "../assets/github.png"
 import LinkedInIcon from "../assets/linkedin.webp"
 import MailIcon from "../assets/mail.png"
-import tower1 from "../assets/tower1.jpg"
+import me from "../assets/city3.jpeg"
 
 
 
@@ -21,139 +20,144 @@ export default function About() {
     return (
         <div 
             className={`${styles.blackTopRightBottomLeft}`}
-            style={{display: "flex", width: "100%",
-                    paddingTop:200,
-                    paddingInline:"10%", height: "105vh", zIndex: 1,
-                    borderBottomRightRadius: 40, 
-                    borderBottomLeftRadius: 40, 
-            }}
+            style={{display: "flex", 
+                    width: "100%", height: "100vh", zIndex: 1,
+                }}
         >
-            <div className={styles.slideUp2}>
-                <h1 style={{fontSize: "50pt", color:"black", marginTop: 60}}>Lesedi Kereteletswe</h1>
-                <h2 style={{fontSize: "30pt", color:"grey", marginBottom: 10}}>Software Engineer</h2>
-                <p style={{marginBottom:20, textWrap: "wrap", width: "50%"}}>
-                    I’m not the kind of special that comes attached to every “I love you” I hear.
-                    You’re so special. I love you.
-                    You’re so smart. I love you.
-                    You’re going to change the world I love you.
-                    You’re so beautiful. i love you.
-                    But what if i wasn’t. What if I’m not. What happens to the love then?
-                    Does it stop?
-                </p>
+            <div className={styles.slideUp2}
+                style={{display: "flex", flexDirection: "row"}}
+            >
+                <div style={{display: "flex", flex: 3.5, flexDirection: "column",
+                    paddingTop:150, 
+                    marginInline:100, 
+                }}>
 
-                <div style={{marginBottom: 40}}>
-                    <a
-                        href="https://www.linkedin.com/in/lesedi-kereteletswe/"
-                        style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "14pt"}}
-                    >
-                        <img
-                        src={LinkedInIcon}
-                        width={30}
-                        alt="LinkedIn Icon"
-                        style={{marginRight:10, filter:"invert(100%)"}}
-                        />
-                        LinkedIn
-                    </a>
-                    <a 
-                        href="https://github.com/lesedi-k"
-                        style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "14pt"}}
-                    >
-                        <img
-                        src={githubIcon}
-                        width={30}
-                        alt="Github Icon"
-                        style={{marginLeft:20, marginRight:10}}
-                        />
-                        Github
-                    </a>
+                    <h1 style={{fontSize: "50pt",  marginTop: 60}}>Lesedi Kereteletswe</h1>
+                    <h2 style={{fontSize: "30pt", color:"#9f9f9f", marginBottom: 10}}>Software Engineer</h2>
+                    <p style={{marginBottom:20, textWrap: "wrap", width: "95%"}}>
+                        My personal journey with tech.
+                        About the goal of contributing to tech products.
+                        Learning about the use of smart systems and what computer Engineering menst to
+                        what growing in the space means to me.
+                        The squeezer, the people that motivate the product. The thinking that motivates it all.
+                    </p>
 
-                    <a 
-                        href="mailto:lesedi.kereteletswe@gmail.com"
-                        style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "14pt"}}
-                    >
-                        <img
-                        src={MailIcon}
-                        height={30}
-                        alt="mail"
-                        style={{marginLeft: 20}}
-                        />
-                        Email
-                    </a>
-
-                    <div style={{
-                            position: "absolute", right: 200, top: 200,
-                            // backgroundColor: "black", 
-                            width: 400, height: 500, zIndex: 1
-                        }}
-                    >
-                        <img 
-                            src={tower1}
-                            style={{height: "100%"}}
-                        />
-                    </div>
-
-                    <div 
-                        className={`${styles.cardBlur} ${styles.cardGrad}`}
-                        style={{
-                            position: "absolute", right: 330, top: 620,
-                            width: 700,
-                            display: "flex",
-                            flexDirection: "column",
-                            textAlign: "left",
-                            borderColor: "white",
-                            borderStyle: "solid",
-                            borderWidth: "0.5px 0 0 0.5px",
-                            borderRadius:"20px", 
-                            paddingInline: "30px",
-                            paddingBlock: "20px",
-                            zIndex: 2,
-                            boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
-                        }}
-                    >
-                        <h1> Skills & Tools</h1>
-                        <div 
-                            className={styles.dotAppear}
-                            style={{
-                                display: "flex", 
-                                flexDirection: 'row', 
-                                flexWrap: "wrap", 
-                                justifyContent:"flex-start",
-                            }}
+                    <div style={{marginBottom: 40}}>
+                        <a
+                            href="https://www.linkedin.com/in/lesedi-kereteletswe/"
+                            style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "14pt"}}
                         >
-                            {skills.map((s) => (
-                                <Bubble key={s+"_id"} Skill={s} link={""}/>
-                            ))}
-                        </div>
+                            <img
+                            src={LinkedInIcon}
+                            width={30}
+                            alt="LinkedIn Icon"
+                            style={{marginRight:10}}
+                            />
+                            LinkedIn
+                        </a>
+                        <a 
+                            href="https://github.com/lesedi-k"
+                            style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "14pt"}}
+                        >
+                            <img
+                            src={githubIcon}
+                            width={30}
+                            alt="Github Icon"
+                            style={{marginLeft:20, marginRight:10, filter:"invert(100%)"}}
+                            />
+                            Github
+                        </a>
+
+                        <a 
+                            href="mailto:lesedi.kereteletswe@gmail.com"
+                            style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "14pt"}}
+                        >
+                            <img
+                            src={MailIcon}
+                            height={30}
+                            alt="mail"
+                            style={{marginLeft: 20, filter:"invert(100%)"}}
+                            />
+                            Email
+                        </a>
                     </div>
-
-
-                    <div 
-                        className={`${styles.cardBlur} ${styles.cardGrad}`}
-                        style={{
-                            position: "absolute", right: 50, top: 150,
-                            width: 450,
-                            display: "flex",
-                            flexDirection: "column",
-                            textAlign: "left",
-                            borderColor: "white",
-                            borderStyle: "solid",
-                            borderWidth: "0.5px 0 0 0.5px",
-                            borderRadius:"20px", 
-                            paddingInline: "30px",
-                            paddingBlock: "20px",
-                            zIndex: 2,
-                            boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
-                        }}
-                    >
-                        <h1> Something Smaller Will go here</h1>
-                        <p>Maybe we were special not because of what we were born to do, but what we did.</p>
-                        
-                    </div>
-
                 </div>
                 
+                {/* Photo Div*/}
+                <div style={{
+                        display: "flex", flex: 3,
+                        backgroundColor: "black", 
+                        height: "100%", 
+                    }}
+                >
+                    <img 
+                        src={me}
+                        style={{
+                            height: "100%",
+                            width: "100%",
+                            objectFit: "cover",
+                            filter: "brightness(80%) contrast(100%)" 
+                          }}
+                    />
+                </div>
             </div>
             
+            {/* Absolute Divs */}
+            <div 
+                className={`${styles.cardBlur} ${styles.cardGrad}`}
+                style={{
+                    position: "absolute", right: 330, top: 620,
+                    width: 700,
+                    display: "flex",
+                    flexDirection: "column",
+                    textAlign: "left",
+                    borderColor: "white",
+                    borderStyle: "solid",
+                    borderWidth: "0.5px 0 0 0.5px",
+                    borderRadius:"20px", 
+                    paddingInline: "30px",
+                    paddingBlock: "20px",
+                    zIndex: 2,
+                    boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
+                }}
+            >
+                <h1> Skills & Tools</h1>
+                <div 
+                    className={styles.dotAppear}
+                    style={{
+                        display: "flex", 
+                        flexDirection: 'row', 
+                        flexWrap: "wrap", 
+                        justifyContent:"flex-start",
+                    }}
+                >
+                    {skills.map((s) => (
+                        <Bubble key={s+"_id"} Skill={s} link={""}/>
+                    ))}
+                </div>
+            </div>
+
+            <div 
+                className={`${styles.cardBlur} ${styles.cardGrad}`}
+                style={{
+                    position: "absolute", right: 50, top: 150,
+                    width: 450,
+                    display: "flex",
+                    flexDirection: "column",
+                    textAlign: "left",
+                    borderColor: "white",
+                    borderStyle: "solid",
+                    borderWidth: "0.5px 0 0 0.5px",
+                    borderRadius:"20px", 
+                    paddingInline: "30px",
+                    paddingBlock: "20px",
+                    zIndex: 2,
+                    boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
+                }}
+            >
+                <h1> ... is my contribution to the vision</h1>
+                <p>Maybe we were special not because of what we were born to do, but what we did.</p>
+            </div>
             
         </div>
     );

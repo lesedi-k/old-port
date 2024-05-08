@@ -3,6 +3,11 @@ import styles from "../page.module.css"
 import { Card } from "../components/cards";
 import { CardProps } from "../components/cards/types"
 
+import "swiper/css/effect-coverflow";
+import { Pagination, Autoplay, Parallax, EffectCoverflow} from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
 
 export default function Projects() {
     const projects : CardProps[] = [
@@ -40,15 +45,52 @@ export default function Projects() {
     
     return (
         <div 
-        className={`${styles.blackTopRightBottomLeft}`}
+        className={`${styles.blackTopLeftBottomRight }`}
             style={{alignItems: "center", textAlign:"center", paddingInline: 230 , 
                 paddingTop: 80, width:"100%", height: "100vh", 
-                borderRadius: 40 
             }}
         >
             <h1 className={styles.h1}>Projects</h1>
-            
-            <div style={{
+
+            {/* <div style={{display:"flex", textAlign:"left", columnGap: 3, marginTop: 50,
+                            justifyContent:"center", scrollbarWidth: "none", width: "100%",
+                }}>
+                    <Swiper
+                        initialSlide={0}
+                        loop={true}
+                        modules={[EffectCoverflow]}
+                        spaceBetween={40}
+                        slidesPerView={3}
+                        effect="coverflow" // Set the effect to 'coverflow'
+                        coverflowEffect={{
+                            rotate: 30, 
+                            stretch: 0,
+                            depth: 100, 
+                            modifier: 1, 
+                            slideShadows: false,
+                        }}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={() => console.log()}    
+                        style={{
+                            width: "100%"
+                        }}     
+                        autoplay={{ delay: 3000 }}                
+                    >
+                    <SwiperSlide/>
+                    {projects.map((e) => (
+                        <SwiperSlide>
+                            <Card 
+                            Employer={e.Employer} 
+                            Job={e.Job}
+                            Description={e.Description}
+                            img={e.img}
+                        />                
+                        </SwiperSlide>    
+                    ))}
+                    <SwiperSlide/>
+                    </Swiper>
+                </div> */}
+                <div style={{
                 display: "flex", 
                 flexDirection: 'row', 
                 flexWrap: "wrap", 

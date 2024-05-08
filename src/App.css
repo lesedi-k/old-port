@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  color:rgb(163, 25, 25);
 }
 
 .App-header {
@@ -25,9 +24,12 @@
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
-  --foreground-rgb: 0, 0, 0;
+  /* --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 235, 235, 235;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255; */
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 11, 32, 66;
+  --background-end-rgb: 11, 26, 51;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,

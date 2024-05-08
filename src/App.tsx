@@ -1,13 +1,12 @@
 import React, { useState, useEffect, HtmlHTMLAttributes } from 'react'
 import styles from "./page.module.css";
 
-
-
 import { Header } from './components/headerBar';
 import About from './pages/about';
 import Experience from './pages/experience';
 import Projects from './pages/projects';
 import Education from './pages/education';
+import Overview from './pages/overview';
 
 export default function Home() {
   const [selected, setSelected] = useState("About");
@@ -16,7 +15,7 @@ export default function Home() {
   const [headerBar, setHeaderBar] = useState<HTMLElement | null>(null);
 
 
-  const Items = ["About", "Experience", "Projects", "Education"];
+  const Items = ["About", "Overview", "Experience", "Projects", "Education"];
 
   function scrollToSection(sectionId: string) {
     const targetHeading = document.getElementById(sectionId+"_heading");
@@ -61,8 +60,6 @@ export default function Home() {
           if (sectionId !== "About") {
             section.classList.add(styles.slideUpHalf);
           }
-          
-
         }
     
         //pick section
@@ -102,7 +99,11 @@ export default function Home() {
               
       <div className={styles.center}>
         <section id="About" className={styles.section}>
-          <About />
+          <About/>
+        </section>
+
+        <section id="Overview" className={styles.section}>
+          <Overview/>
         </section>
 
         <section id="Experience" className={styles.section}>
