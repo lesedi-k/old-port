@@ -20,18 +20,46 @@ export default function Experience() {
             img: slice,
 
             title: "The Execution of Product-Mindedness",
-            story: "My work at SLICE HealthTech was centered around the task of taking a broad \
-                    statement regarding data interoperability problems in between healthcare \
-                    facilities and exploring it in its entirety. Then in true entrepreneurial \
-                    fashion—taking the leap to build something out of nothing. My team took \
-                    that problem space we’d worked to build, that system of problems we’d made \
-                    sense of and turned it into the origins of our patient facing solution. \
+            story: "At SLICE HealthTech, my work revolved around tackling the intricate web \
+                    of data interoperability issues between healthcare facilities. It was an \
+                    ambitious undertaking – taking a broad problem statement and unpacking it \
+                    layer by layer until we could map out the entire landscape. But that was just \
+                    the beginning. In true entrepreneurial spirit, we took that deep understanding \
+                    and transformed it into the genesis of our patient-facing solution.\
                     \n\n\
-                    The joy of the job lies in the task of map-making. I mapped a problem to \
-                    questions, questions to answer finding activities, and those to answers \
-                    that would iteratively lead to market-validated solutions. \
+                    The true joy of my role lied in the challenges of cartography, of map-making itself.\
+                    I meticulously mapped problems to questions, questions to exploration activities, \
+                    and those activities iteratively led us towards market-validated solutions. \
+                    Each step raised new inquiries to be pursued relentlessly.\
+                    \n\n\
+                    On the research front, I grappled with questions like: What were we really trying \
+                    to uncover when building this problem space? What information did we need to \
+                    propel us forward, and how could we acquire it? What functionalities must we build, \
+                    and who were the essential experts we needed to engage?\
+                    \n\n\
+                    Pivoting to product development brought forth a new set of critical questions: Who \
+                    is our end-user? What are their current behaviors and pain points? How do they \
+                    experience this problem we're aiming to solve? How do they perceive our proposed \
+                    solution? I've worked across the full product design and development pipeline – \
+                    UI/UX design, frontend and backend development. My driving purpose is viewing \
+                    technology through the lens of its utility to end-users.\
+                    \n\n\
+                    As I delved deeper, extracting insights through activities like consulting industry \
+                    experts, patients, doctors and other vital stakeholders, developing software \
+                    prototypes and MVPs, a layer of program management was paramount. At each stage:\
+                    \n\n\
+                    First, I established a hypothesis – something specific and falsifiable that needed \
+                    validating or rejecting. Then, I meticulously designed activities to attain those \
+                    answers, be it stakeholder interviews, user testing or technical prototyping. \
+                    Finally, I integrated those findings into the evolving, complex map of the problem \
+                    domain, allowing us to iterate on increasingly refined solutions aligned with key \
+                    criteria.\
+                    \n\n\
+                    My tenure as Tech Lead at SLICE HealthTech exposed me to the intricacies of harmonizing \
+                    product strategies with genuine user needs, particularly in the labyrinthine \
+                    healthcare arena. It was mapped discovery and purposeful creation colliding, \
+                    an intersection where truly impactful products take form.\
                     ",
-            solutions: "",
             photos: "",
         },
         {
@@ -39,9 +67,8 @@ export default function Experience() {
             Job: "Entrepreneur/ Full-Stack Developer",
             img: partiton,
             title: "Technological Utility",
-            story: "Coming Soon",
-            challenges: "",
-            solutions: "",
+            story: "Specia\
+                    \n\n\ More Coming Soon!",
             photos: "",
         },
         {
@@ -49,9 +76,8 @@ export default function Experience() {
             Job:"CIS 3500: Teaching Assistant",
             img: cis,
             title: "People & First Principles",
-            story: "Coming Soon",
-            challenges: "",
-            solutions: "",
+            story: "How to motivate teams and manage processes when working towards a goal.\
+                    \n\n\ More Coming Soon!",
             photos: "",
         },
         {
@@ -59,9 +85,8 @@ export default function Experience() {
             Job:"ESE 2150: Teaching Assistant",
             img: cis,
             title: "The Transfer of Intuition",
-            story: "Coming Soon",
-            challenges: "",
-            solutions: "",
+            story: "Building software\
+                    \n\n\ More Coming Soon!",
             photos: "",
         },
         {
@@ -69,9 +94,8 @@ export default function Experience() {
             Job: "Vice President of Entertainment",
             img:wabfIcon,
             title: "The Communal Context of Goal Reaching",
-            story: "Coming Soon",
-            challenges: "",
-            solutions: "",
+            story: "Coordinating all aspects of entertainment, performances, and festivites for the US's longest running Africa business conference.\
+                    \n\n\ More Coming Soon!",
             photos: "",
         },
     ]
@@ -96,14 +120,17 @@ export default function Experience() {
                     />
                     <div   
                         className={`${styles.cardBlur} ${styles.cardGrad}`} 
-                        style={{display: "flex", flex:2, flexDirection: "column",
-                        borderColor: "white",
-                        borderStyle: "solid",
-                        borderWidth: "0.5px 0 0 0.5px",
-                        borderRadius:"20px", 
-                        paddingInline: "30px",
-                        paddingBlock: "30px",
-                        boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
+                        style={{
+                            display: "flex", flex:2, flexDirection: "column",
+                            maxHeight: 520,
+                            borderColor: "white",
+                            borderStyle: "solid",
+                            borderWidth: "0.5px 0 0 0.5px",
+                            borderRadius:"20px", 
+                            paddingInline: "30px",
+                            paddingBlock: "30px",
+                            boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
+                            overflow: "auto",
                         }}
                     >
                         <h1>{exp[selected].Employer[0]}</h1>
