@@ -7,11 +7,11 @@ export default function Overview() {
 
     const areas = [
         {
-            expertise: "Frontend", 
+            expertise: "Frontend Development", 
             decription: "Cross-platform application development", 
         },
         {
-            expertise: "Backend Dev", 
+            expertise: "Backend Development", 
             decription: "Distributed Web Systems Design" ,
         },
         {
@@ -19,7 +19,7 @@ export default function Overview() {
             decription: "",
         },
         {
-            expertise: "IoT System", 
+            expertise: "IoT System Development", 
             decription: "",
         }
     ]
