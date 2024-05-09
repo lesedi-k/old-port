@@ -129,7 +129,7 @@ export default function Experience() {
                         className={`${styles.cardBlur} ${styles.cardGrad}`} 
                         style={{
                             display: "flex", flex:2, flexDirection: "column",
-                            maxHeight: 520,
+                            height: 520,
                             borderColor: "white",
                             borderStyle: "solid",
                             borderWidth: "0.5px 0 0 0.5px",
