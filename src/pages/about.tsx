@@ -159,7 +159,7 @@ export default function About() {
             >
                 <h3> Building a Product is Like Telling a Story</h3>
                 <p> 
-                    I like to think about the product the story of the challange it wishes to face.
+                    I like to think about the product in terms of the story of the challange it wishes to face.
                     Its story grows with every user interaction, line of code, and product decision,
                     until we have a living, breathing narrative of innovation and progress, shaped by the challenges the product overcomes, 
                     the solutions it offers, and the lives it touches.
