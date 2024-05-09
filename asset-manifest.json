@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/lesedik/static/css/main.f7890870.css",
-    "main.js": "/lesedik/static/js/main.bfb40806.js",
+    "main.css": "/lesedik/static/css/main.715860a8.css",
+    "main.js": "/lesedik/static/js/main.f8b5f591.js",
     "static/js/453.ede74042.chunk.js": "/lesedik/static/js/453.ede74042.chunk.js",
     "static/media/wabf.png": "/lesedik/static/media/wabf.343df8b236e0b43a6490.png",
+    "static/media/city3.jpeg": "/lesedik/static/media/city3.408afae4d0b459610427.jpeg",
     "static/media/mail.png": "/lesedik/static/media/mail.b59bd8fefe24b2047c80.png",
     "static/media/slice.jpg": "/lesedik/static/media/slice.df3fc2828edf97a8c1e0.jpg",
     "static/media/seas.png": "/lesedik/static/media/seas.5e9d7add3b8ef79aeb41.png",
@@ -11,12 +12,12 @@
     "static/media/partition.png": "/lesedik/static/media/partition.e22a84acd5c3816f99ca.png",
     "static/media/linkedin.webp": "/lesedik/static/media/linkedin.aa0a6b93275c33e6ecab.webp",
     "index.html": "/lesedik/index.html",
-    "main.f7890870.css.map": "/lesedik/static/css/main.f7890870.css.map",
-    "main.bfb40806.js.map": "/lesedik/static/js/main.bfb40806.js.map",
+    "main.715860a8.css.map": "/lesedik/static/css/main.715860a8.css.map",
+    "main.f8b5f591.js.map": "/lesedik/static/js/main.f8b5f591.js.map",
     "453.ede74042.chunk.js.map": "/lesedik/static/js/453.ede74042.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7890870.css",
-    "static/js/main.bfb40806.js"
+    "static/css/main.715860a8.css",
+    "static/js/main.f8b5f591.js"
   ]
 }
