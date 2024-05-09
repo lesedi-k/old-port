@@ -67,7 +67,14 @@ export default function Experience() {
             Job: "Entrepreneur/ Full-Stack Developer",
             img: partiton,
             title: "Technological Utility",
-            story: "Specia\
+            story: "Tech's increasing connectedness, progressing from plugging in variables to \
+                    functions, classes, and now easily integrating specialized software through \
+                    APIs, has changed the complexity and specialization of what can be plugged in.\
+                    This has transformed the skills required to build solutions, making it easier \
+                    than ever due to plug-and-play, albeit with the risk of buying into trendiness \
+                    and falling into the masses. This necessitated a focus on standing out by building \
+                    for the user, where the underlying power lies in the plug-and-play world's ability \
+                    for rapid iteration.\
                     \n\n\ More Coming Soon!",
             photos: "",
         },
@@ -76,7 +83,7 @@ export default function Experience() {
             Job:"CIS 3500: Teaching Assistant",
             img: cis,
             title: "People & First Principles",
-            story: "How to motivate teams and manage processes when working towards a goal.\
+            story: "How to motivate teams and manage processes when working towards a goal...\
                     \n\n\ More Coming Soon!",
             photos: "",
         },
@@ -85,7 +92,7 @@ export default function Experience() {
             Job:"ESE 2150: Teaching Assistant",
             img: cis,
             title: "The Transfer of Intuition",
-            story: "Building software\
+            story: "The art of teaching passing your intuition by talking through your thought process...\
                     \n\n\ More Coming Soon!",
             photos: "",
         },
@@ -94,7 +101,7 @@ export default function Experience() {
             Job: "Vice President of Entertainment",
             img:wabfIcon,
             title: "The Communal Context of Goal Reaching",
-            story: "Coordinating all aspects of entertainment, performances, and festivites for the US's longest running Africa business conference.\
+            story: "Coordinating all aspects of entertainment, performances, and festivites for the US's longest running Africa business conference...\
                     \n\n\ More Coming Soon!",
             photos: "",
         },
