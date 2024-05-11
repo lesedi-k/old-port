@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lesedik/static/css/main.f2822092.css",
-    "main.js": "/lesedik/static/js/main.72b4c566.js",
+    "main.js": "/lesedik/static/js/main.4775792b.js",
     "static/js/453.ede74042.chunk.js": "/lesedik/static/js/453.ede74042.chunk.js",
     "static/media/wabf.png": "/lesedik/static/media/wabf.343df8b236e0b43a6490.png",
     "static/media/city3.jpeg": "/lesedik/static/media/city3.408afae4d0b459610427.jpeg",
@@ -13,11 +13,11 @@
     "static/media/linkedin.webp": "/lesedik/static/media/linkedin.aa0a6b93275c33e6ecab.webp",
     "index.html": "/lesedik/index.html",
     "main.f2822092.css.map": "/lesedik/static/css/main.f2822092.css.map",
-    "main.72b4c566.js.map": "/lesedik/static/js/main.72b4c566.js.map",
+    "main.4775792b.js.map": "/lesedik/static/js/main.4775792b.js.map",
     "453.ede74042.chunk.js.map": "/lesedik/static/js/453.ede74042.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f2822092.css",
-    "static/js/main.72b4c566.js"
+    "static/js/main.4775792b.js"
   ]
 }
