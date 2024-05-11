@@ -114,9 +114,8 @@ export default function Experience() {
                     height: "90vh",  width: "100%",  
                 }}
         >
-            <div id="experience_div_slide">
-                <h2 className={styles.h1} style={{marginTop: 50}
-                }>Experience</h2>
+            <div>
+                <h2 className={styles.h1} style={{marginTop: 50}}>Experience</h2>
                 <h3 style={{fontWeight: 200, fontSize:"20pt", marginBottom: 30}}>Learn more about my professional experiences</h3>
 
                 <div style={{display: "flex", flexDirection: "row", width: "100%", height: "100%"}}>

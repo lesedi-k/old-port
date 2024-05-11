@@ -67,15 +67,17 @@ export default function Overview() {
                         flex: index === selected ? 7 : 1, 
                         paddingInline: index === selected ? 40 : 20,
                         backgroundColor: "rgba(17, 156, 156, 0." + (index + 1) +")",
-                        // transition: "flex 0.01s ease-out"
+                        transition: "flex 0.01s ease-out",
                         justifyContent: "center"
                     }}
                 >
-                    <h1 style={{
+                    <h1 
+                        className={`${styles.slideLeft}`}
+                        style={{
+                            marginLeft: "-60%",
                             width: "80%", 
-                            fontSize: index === selected ? 50 : 30, 
+                            fontSize: 30, 
                             // marginTop: index === selected ? 50 : 500
-                            // marginTop: 50
                         }}
                     >
                         {a.expertise}

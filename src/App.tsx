@@ -15,7 +15,7 @@ export default function Home() {
   const [headerBar, setHeaderBar] = useState<HTMLElement | null>(null);
 
 
-  const Items = ["About", "Overview", "Experience", "Projects", "Education"];
+  const Items = ["About", "Experience", "Projects", "Education"];
 
   function scrollToSection(sectionId: string) {
     
@@ -53,19 +53,22 @@ export default function Home() {
     //moves slider
     if (sections && slider) {
       sections.forEach((section: HTMLElement) => {
-        const sectionTop = section.offsetTop - 100;
-        const sectionBottom = sectionTop + section.offsetHeight;
+        const sectionTop = section.offsetTop;
+        // const sectionBottom = sectionTop + section.offsetHeight;
+        const sectionBottom = section.offsetTop + section.offsetHeight;
 
-        //section actinations
-        if (currentPosition >= sectionTop - 1000 ) {
+        //section animations
+        if (currentPosition + window.innerHeight >= sectionTop) {
           const sectionId = section.getAttribute('id');
-          // if (sectionId !== "About") {
-          //   section.classList.add(styles.slideUpHalf);
-          // }
+
+          //get their child's child add animation to that
+          if (sectionId !== "About" && sectionId !== "Overview") {
+            section.children[0].children[0].classList.add(styles.slideUpHalf);
+          }
         }
     
         //pick section
-        if (currentPosition >= sectionTop && currentPosition <= sectionBottom) {
+        if (currentPosition >= sectionTop - 900 && currentPosition <= sectionBottom) {
           const sectionId = section.getAttribute('id');
           
           //move slider

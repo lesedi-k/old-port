@@ -21,7 +21,7 @@ export default function About() {
         <div 
             className={`${styles.blackTopRightBottomLeft}`}
             style={{display: "flex", 
-                    width: "100%", height: "95vh", zIndex: 1,
+                    width: "100%", height: "96vh", zIndex: 1,
                 }}
         >
             <div className={styles.slideUp2}
@@ -108,7 +108,7 @@ export default function About() {
                 style={{
                     position: "absolute", 
                     right: "60%", 
-                    top: 620,
+                    bottom: 40,
                     width: "47%",
                     display: "flex",
                     flexDirection: "column",
@@ -144,7 +144,6 @@ export default function About() {
                 style={{
                     position: "absolute", 
                     right: "40%", 
-                    
                     top: 120,
                     width: "35%",
                     display: "flex",

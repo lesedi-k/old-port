@@ -45,70 +45,71 @@ export default function Projects() {
     
     return (
         <div 
-        className={`${styles.blackTopLeftBottomRight }`}
+            className={`${styles.blackTopLeftBottomRight }`}
             style={{alignItems: "center", textAlign:"center", paddingInline: 230 , 
-                paddingTop: 80, width:"100%", height: "100vh", 
+                paddingTop: 80, width:"100%", height: "90vh", 
             }}
         >
-            <h1 className={styles.h1}>Projects</h1>
+            <div> {/* Div here for animation reasons */}
+                <h1 className={styles.h1}>Projects</h1>
 
-            {/* <div style={{display:"flex", textAlign:"left", columnGap: 3, marginTop: 50,
-                            justifyContent:"center", scrollbarWidth: "none", width: "100%",
+                {/* <div style={{display:"flex", textAlign:"left", columnGap: 3, marginTop: 50,
+                                justifyContent:"center", scrollbarWidth: "none", width: "100%",
+                    }}>
+                        <Swiper
+                            initialSlide={0}
+                            loop={true}
+                            modules={[EffectCoverflow]}
+                            spaceBetween={40}
+                            slidesPerView={3}
+                            effect="coverflow" // Set the effect to 'coverflow'
+                            coverflowEffect={{
+                                rotate: 30, 
+                                stretch: 0,
+                                depth: 100, 
+                                modifier: 1, 
+                                slideShadows: false,
+                            }}
+                            onSlideChange={() => console.log('slide change')}
+                            onSwiper={() => console.log()}    
+                            style={{
+                                width: "100%"
+                            }}     
+                            autoplay={{ delay: 3000 }}                
+                        >
+                        <SwiperSlide/>
+                        {projects.map((e) => (
+                            <SwiperSlide>
+                                <Card 
+                                Employer={e.Employer} 
+                                Job={e.Job}
+                                Description={e.Description}
+                                img={e.img}
+                            />                
+                            </SwiperSlide>    
+                        ))}
+                        <SwiperSlide/>
+                        </Swiper>
+                    </div> */}
+                    <div style={{
+                    display: "flex", 
+                    flexDirection: 'row', 
+                    flexWrap: "wrap", 
+                    justifyContent:"center",
+                    marginTop:"2vh",
                 }}>
-                    <Swiper
-                        initialSlide={0}
-                        loop={true}
-                        modules={[EffectCoverflow]}
-                        spaceBetween={40}
-                        slidesPerView={3}
-                        effect="coverflow" // Set the effect to 'coverflow'
-                        coverflowEffect={{
-                            rotate: 30, 
-                            stretch: 0,
-                            depth: 100, 
-                            modifier: 1, 
-                            slideShadows: false,
-                        }}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={() => console.log()}    
-                        style={{
-                            width: "100%"
-                        }}     
-                        autoplay={{ delay: 3000 }}                
-                    >
-                    <SwiperSlide/>
-                    {projects.map((e) => (
-                        <SwiperSlide>
-                            <Card 
-                            Employer={e.Employer} 
-                            Job={e.Job}
-                            Description={e.Description}
-                            img={e.img}
-                        />                
-                        </SwiperSlide>    
+                    {projects.map((p) => (
+                        <Card
+                            key={p.Employer[0]}
+                            Employer={p.Employer}
+                            Job={p.Job}
+                            Description={p.Description}
+                            img={p.img}
+                        />
                     ))}
-                    <SwiperSlide/>
-                    </Swiper>
-                </div> */}
-                <div style={{
-                display: "flex", 
-                flexDirection: 'row', 
-                flexWrap: "wrap", 
-                justifyContent:"center",
-                marginTop:"2vh",
-            }}>
-                {projects.map((p) => (
-                    <Card
-                        key={p.Employer[0]}
-                        Employer={p.Employer}
-                        Job={p.Job}
-                        Description={p.Description}
-                        img={p.img}
-                    />
-                ))}
 
+                </div>
             </div>
-            
         </div>
     );
 }
