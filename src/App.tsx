@@ -10,6 +10,7 @@ import Overview from './pages/overview';
 
 export default function Home() {
   const [selected, setSelected] = useState("About");
+
   const [sections, setSections] = useState <NodeListOf<HTMLElement>>();
   const [slider, setSlider] = useState<HTMLElement | null>(null);
   const [headerBar, setHeaderBar] = useState<HTMLElement | null>(null);
@@ -98,10 +99,12 @@ export default function Home() {
   useEffect(() => {
   },[selected])
 
+
+
   return (
     <main className={styles.main}>
       <Header Items={Items} onClick={(event) => scrollToSection(event)}/>
-              
+          
       <div className={styles.center}>
         <section id="About" className={styles.section}>
           <About/>

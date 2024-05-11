@@ -31,9 +31,9 @@ export default function About() {
                     paddingTop:150, 
                     marginInline:100, 
                 }}>
-
-                    <h1 style={{fontSize: "50pt",  marginTop: 60}}>Lesedi Kereteletswe</h1>
-                    <h2 style={{fontSize: "30pt", color:"#9f9f9f", marginBottom: 10}}>Software Engineer</h2>
+                    <code style={{fontSize: "12pt", marginTop: 60}}> Website Developed by</code>
+                    <h1 style={{fontSize: "50pt"}}>Lesedi Kereteletswe</h1>
+                    <h2 style={{fontSize: "30pt",  color:"#9f9f9f", marginBottom: 10}}>Software Engineer</h2>
                     <p style={{marginBottom:20, textWrap: "wrap", width: "95%", fontSize: "120%"}}>
                         In my personal journey with technology, I have been driven by a strong ambition to contribute meaningfully 
                         to technology that brings us clser to living in a "smart" world. A world where tech is more than a trend, 
@@ -42,7 +42,7 @@ export default function About() {
                         unveiling the profound potential of technology to profoundly enhance the quality of life for all.
                     </p>
 
-                    <div style={{marginBottom: 40}}>
+                    <div style={{marginBottom: 20}}>
                         <a
                             href="https://www.linkedin.com/in/lesedi-kereteletswe/"
                             style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "14pt"}}
