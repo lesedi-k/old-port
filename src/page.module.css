@@ -180,11 +180,11 @@
 
 @keyframes slideLeft {
   from {
-    transform: translate(50%, 50%);
+    transform: translate(100%, 0);
     opacity: 0;
   }
   to {
-    transform: translate(-120%, 260%);
+    transform: translate(80%, 0);
     opacity: 1;
   }
 }
@@ -280,8 +280,8 @@
 .bubbleDiv {
   border-radius: 50px;
   margin: 4px;
-  padding-inline: 16px;
-  padding-block: 3px;
+  padding-inline: 1%;
+  padding-block: 0.5%;
   background-color: rgba(255, 255, 255, 0.1); 
   /* box-shadow: 1px 1px 3px rgba(0,0,0, 0.3);  */
   border-color: white;

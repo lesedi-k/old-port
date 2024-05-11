@@ -104,11 +104,12 @@ export default function About() {
             
             {/* Absolute Divs */}
             <div 
-                className={`${styles.cardBlur} ${styles.cardGrad}`}
+                className={`${styles.cardBlur} ${styles.cardGrad} ${styles.slideLeft}`}
                 style={{
-                    position: "absolute", right: "23%", top: 620,
+                    position: "absolute", 
+                    right: "60%", 
+                    top: 620,
                     width: "47%",
-                    // width: 700,
                     display: "flex",
                     flexDirection: "column",
                     textAlign: "left",
@@ -139,9 +140,12 @@ export default function About() {
             </div>
 
             <div 
-                className={`${styles.cardBlur} ${styles.cardGrad}`}
+                className={`${styles.cardBlur} ${styles.cardGrad} ${styles.slideLeft}`}
                 style={{
-                    position: "absolute", right: "10%", top: 120,
+                    position: "absolute", 
+                    right: "40%", 
+                    
+                    top: 120,
                     width: "35%",
                     display: "flex",
                     flexDirection: "column",

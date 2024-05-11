@@ -56,10 +56,10 @@ export default function Education() {
         <div
         className={`${styles.blackTopRightBottomLeft}`}
             style={{alignItems: "center", textAlign:"center", paddingInline:100 ,
-                    width:"100%", height: "80vh",  
+                    width:"100%", height: "90vh",  
                 }}
         > 
-            <h1 className={styles.h1}>Education</h1>
+            <h1 className={styles.h1} style={{marginTop:40}}>Education</h1>
             <h1 style={{fontSize: "40pt"}}>University of Pennsylvania</h1>
             <h2 style={{fontSize: "30pt", fontWeight: 300,}}>Candidate for Bachelor of Science in Computer Engineering</h2>	
             <h2 style={{fontSize: "20pt", fontWeight: 600}}>May 2024</h2>
