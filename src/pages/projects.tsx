@@ -53,7 +53,7 @@ export default function Projects() {
             <div> {/* Div here for animation reasons */}
                 <h1 className={styles.h1}>Projects</h1>
 
-                {/* <div style={{display:"flex", textAlign:"left", columnGap: 3, marginTop: 50,
+                <div style={{display:"flex", textAlign:"left", columnGap: 3, marginTop: 50,
                                 justifyContent:"center", scrollbarWidth: "none", width: "100%",
                     }}>
                         <Swiper
@@ -90,8 +90,8 @@ export default function Projects() {
                         ))}
                         <SwiperSlide/>
                         </Swiper>
-                    </div> */}
-                    <div style={{
+                    </div>
+                    {/* <div style={{
                     display: "flex", 
                     flexDirection: 'row', 
                     flexWrap: "wrap", 
@@ -108,7 +108,7 @@ export default function Projects() {
                         />
                     ))}
 
-                </div>
+                </div> */}
             </div>
         </div>
     );
