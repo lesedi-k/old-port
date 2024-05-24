@@ -31,10 +31,10 @@ export default function About() {
                     paddingTop:150, 
                     marginInline:100, 
                 }}>
-                    <code style={{fontSize: "12pt", marginTop: 60}}> Website Developed by</code>
+                    <code className={styles.typewriter} style={{fontSize: "18pt", marginTop: 60}}> Website Developed by</code>
                     <h1 style={{fontSize: "50pt"}}>Lesedi Kereteletswe</h1>
                     <h2 style={{fontSize: "30pt",  color:"#9f9f9f", marginBottom: 10}}>Software Engineer</h2>
-                    <p style={{marginBottom:20, textWrap: "wrap", width: "95%", fontSize: "120%"}}>
+                    <p style={{marginBottom:20, textWrap: "wrap", width: "50%", fontSize: "120%"}}>
                         In my personal journey with technology, I have been driven by a strong ambition to contribute meaningfully 
                         to technology that brings us clser to living in a "smart" world. A world where tech is more than a trend, 
                         it's the vehicle for a easier systems of living.
@@ -84,22 +84,19 @@ export default function About() {
                 </div>
                 
                 {/* Photo Div*/}
-                <div style={{
-                        display: "flex", flex: 3,
-                        backgroundColor: "black", 
-                        height: "100%", 
+{/* 
+                <img 
+                    src={me}
+                    style={{
+                        position: "absolute",
+                        top: 200,
+                        right: 100,
+                        height: "50%",
+                        objectFit: "cover",
+                        filter: "brightness(80%) contrast(100%)" 
                     }}
-                >
-                    <img 
-                        src={me}
-                        style={{
-                            height: "100%",
-                            width: "100%",
-                            objectFit: "cover",
-                            filter: "brightness(80%) contrast(100%)" 
-                          }}
-                    />
-                </div>
+                /> */}
+
             </div>
             
             {/* Absolute Divs */}
@@ -107,8 +104,8 @@ export default function About() {
                 className={`${styles.cardBlur} ${styles.cardGrad} ${styles.slideLeft}`}
                 style={{
                     position: "absolute", 
-                    right: "60%", 
-                    bottom: 40,
+                    right: "45%", 
+                    bottom: "10%",
                     width: "47%",
                     display: "flex",
                     flexDirection: "column",
@@ -143,7 +140,7 @@ export default function About() {
                 className={`${styles.cardBlur} ${styles.cardGrad} ${styles.slideLeft}`}
                 style={{
                     position: "absolute", 
-                    right: "40%", 
+                    right: "30%", 
                     top: 120,
                     width: "35%",
                     display: "flex",
