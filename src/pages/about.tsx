@@ -6,7 +6,7 @@ import { Bubble } from "../components/bubbles";
 import githubIcon from "../assets/github.png"
 import LinkedInIcon from "../assets/linkedin.webp"
 import MailIcon from "../assets/mail.png"
-import me from "../assets/city3.jpeg"
+import me from "../assets/art1.png"
 
 
 
@@ -84,8 +84,8 @@ export default function About() {
                 </div>
                 
                 {/* Photo Div*/}
-{/* 
-                <img 
+
+                 {/* <img 
                     src={me}
                     style={{
                         position: "absolute",
