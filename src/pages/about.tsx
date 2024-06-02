@@ -158,10 +158,10 @@ export default function About() {
             >
                 <h3> Building a Product is Like Telling a Story</h3>
                 <p> 
-                    I like to think about the product in terms of the story of the challange it wishes to face.
-                    Its story grows with every user interaction, line of code, and product decision,
-                    until we have a living, breathing narrative of innovation and progress, shaped by the challenges the product overcomes, 
-                    the solutions it offers, and the lives it touches.
+                I view a product as a story evolving with each user interaction,
+                line of code, and decision, creating a dynamic narrative of innovation 
+                and progress shaped by the challenges it overcomes, the solutions 
+                it provides, and the lives it impacts.
                 </p>
             </div>
             
