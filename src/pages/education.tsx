@@ -1,7 +1,6 @@
 'use client'
 import styles from "../page.module.css"
 import { Bubble } from "../components/bubbles";
-import Bg1 from "../components/bg1";
 
 export default function Education() {
 

@@ -5,6 +5,7 @@ export type CardProps = {
   Job: string,
   Description: string,
   img: string,
+  link: string,
 }
 
 export type CardComponent = FunctionComponent<CardProps>

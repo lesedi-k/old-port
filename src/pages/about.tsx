@@ -35,11 +35,10 @@ export default function About() {
                     <h1 style={{fontSize: "50pt"}}>Lesedi Kereteletswe</h1>
                     <h2 style={{fontSize: "30pt",  color:"#9f9f9f", marginBottom: 10}}>Software Engineer</h2>
                     <p style={{marginBottom:20, textWrap: "wrap", width: "50%", fontSize: "120%"}}>
-                        In my personal journey with technology, I have been driven by a strong ambition to contribute meaningfully 
-                        to technology that brings us clser to living in a "smart" world. A world where tech is more than a trend, 
-                        it's the vehicle for a easier systems of living.
-                        This journey has led me to delve into the intersection of technology and entrepreneurship,
-                        unveiling the profound potential of technology to profoundly enhance the quality of life for all.
+                        My journey with technology is driven by the ambition to create meaningful 
+                        products that bring us closer to a "smart" world. This has led me to explore the 
+                        intersection of technology and entrepreneurship, revealing technology's potential 
+                        to enhance quality of life and create better systems of living.
                     </p>
 
                     <div style={{marginBottom: 20}}>

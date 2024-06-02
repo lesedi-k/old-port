@@ -2,7 +2,6 @@
 import React, { useState, useEffect, HtmlHTMLAttributes } from 'react'
 
 import styles from "../page.module.css"
-import { ExCard } from "../components/cards";
 import wabfIcon from "../assets/wabf.png"
 import slice from  "../assets/slice.jpg"
 import cis from  "../assets/seas.png"

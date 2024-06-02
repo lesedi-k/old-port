@@ -16,53 +16,59 @@ export default function Projects() {
             Job: "UI/UX Designer & Full-Stack Developer",
             Description: "Developed and Designed UX for an ML Powered Mentorship Matching website.",
             img: "",
+            link: "https://github.com/CassieHorwege/mentorLink",
         },
         {
             Employer: ["Gooooooogle"],
             Job: "Software Engineer",
             Description: "Built a google-based search engine that was composed of a frontend, Crawler, Indexer and Page Rank and dynamic server.",
             img: "",
+            link: ""
         },
         {
             Employer: ["ClothesMatcher"],
             Job: "UI/UX Designer & Full-Stack Developer",
             Description: "Developed and designed UI for clothes sharing initiatve.",
             img: "",
+            link: "https://github.com/cis350/project-team40"
         },
         {
             Employer: ["Shell-based Operating System"],
             Job: "Software Engineer",
             Description: "Developed kernel infrastructure for C language UNIX-based operating system using C.",
             img: "",
+            link: "https://github.com/CIS548/22fa-project-2-group-27"
         },
         {
             Employer: ["IoT VVI Pacemaker"],
             Job: "Embedded Systems Engineer",
             Description: "Engineered a VVI cardiac pacemaker.",
             img: "",
+            link: ""
         },
     ]
     
     return (
         <div 
             className={`${styles.blackTopLeftBottomRight }`}
-            style={{alignItems: "center", textAlign:"center", paddingInline: 230 , 
-                paddingTop: 80, width:"100%", height: "90vh", 
+            style={{alignItems: "center", textAlign:"center", 
+                paddingTop: 80, width:"100%", height: "100vh", 
             }}
         >
             <div> {/* Div here for animation reasons */}
                 <h1 className={styles.h1}>Projects</h1>
 
-                <div style={{display:"flex", textAlign:"left", columnGap: 3, marginTop: 50,
-                                justifyContent:"center", scrollbarWidth: "none", width: "100%",
+                <div style={{display:"flex", textAlign:"left", marginTop: 20,
+                            justifyContent:"center", scrollbarWidth: "none", width: "100%",
                     }}>
                         <Swiper
                             initialSlide={0}
                             loop={true}
                             modules={[EffectCoverflow]}
-                            spaceBetween={40}
-                            slidesPerView={3}
-                            effect="coverflow" // Set the effect to 'coverflow'
+                            spaceBetween={-100}
+                            slidesPerView={1}
+                            effect="coverflow"
+                            centeredSlides={false}
                             coverflowEffect={{
                                 rotate: 30, 
                                 stretch: 0,
@@ -73,22 +79,21 @@ export default function Projects() {
                             onSlideChange={() => console.log('slide change')}
                             onSwiper={() => console.log()}    
                             style={{
-                                width: "100%"
+                                width: "80%",
                             }}     
                             autoplay={{ delay: 3000 }}                
                         >
-                        <SwiperSlide/>
                         {projects.map((e) => (
                             <SwiperSlide>
                                 <Card 
-                                Employer={e.Employer} 
-                                Job={e.Job}
-                                Description={e.Description}
-                                img={e.img}
-                            />                
+                                    Employer={e.Employer} 
+                                    Job={e.Job}
+                                    Description={e.Description}
+                                    img={e.img}
+                                    link={e.link}
+                                />                
                             </SwiperSlide>    
                         ))}
-                        <SwiperSlide/>
                         </Swiper>
                     </div>
                     {/* <div style={{

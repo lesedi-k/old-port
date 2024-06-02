@@ -1,7 +1,7 @@
 
 import styles from "../page.module.css"
 
-function GlassCard() {
+function GlassCard({}) {
     return (
         <div 
             className={`${styles.cardBlur} ${styles.cardGrad}`}
