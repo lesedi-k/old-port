@@ -6,9 +6,6 @@ import { Bubble } from "../components/bubbles";
 import githubIcon from "../assets/github.png"
 import LinkedInIcon from "../assets/linkedin.webp"
 import MailIcon from "../assets/mail.png"
-import me from "../assets/art1.png"
-
-
 
 export default function About() {
 
@@ -28,18 +25,11 @@ export default function About() {
                 style={{display: "flex", flexDirection: "row"}}
             >
                 <div style={{display: "flex", flex: 3.5, flexDirection: "column",
-                    paddingTop:150, 
-                    marginInline:100, 
+                    paddingTop:150, marginInline:100, 
                 }}>
-                    <code className={styles.typewriter} style={{fontSize: "18pt", marginTop: 60}}> Website Developed by</code>
-                    <h1 style={{fontSize: "50pt"}}>Lesedi Kereteletswe</h1>
+                    <code className={styles.typewriter} style={{fontSize: "18pt", marginTop: "30%"}}> Website Developed by</code>
+                    <h1 style={{fontSize: "50pt", width: "100%"}}>Lesedi Kereteletswe</h1>
                     <h2 style={{fontSize: "30pt",  color:"#9f9f9f", marginBottom: 10}}>Software Engineer</h2>
-                    <p style={{marginBottom:20, textWrap: "wrap", width: "50%", fontSize: "120%"}}>
-                        My journey with technology is driven by the ambition to create meaningful 
-                        products that bring us closer to a "smart" world. This has led me to explore the 
-                        intersection of technology and entrepreneurship, revealing technology's potential 
-                        to enhance quality of life and create better systems of living.
-                    </p>
 
                     <div style={{marginBottom: 20}}>
                         <a
@@ -81,21 +71,6 @@ export default function About() {
                         </a>
                     </div>
                 </div>
-                
-                {/* Photo Div*/}
-
-                 {/* <img 
-                    src={me}
-                    style={{
-                        position: "absolute",
-                        top: 200,
-                        right: 100,
-                        height: "50%",
-                        objectFit: "cover",
-                        filter: "brightness(80%) contrast(100%)" 
-                    }}
-                /> */}
-
             </div>
             
             {/* Absolute Divs */}
@@ -103,7 +78,7 @@ export default function About() {
                 className={`${styles.cardBlur} ${styles.cardGrad} ${styles.slideLeft}`}
                 style={{
                     position: "absolute", 
-                    right: "45%", 
+                    right: "55%", 
                     bottom: "10%",
                     width: "47%",
                     display: "flex",

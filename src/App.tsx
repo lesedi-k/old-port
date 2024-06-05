@@ -1,4 +1,4 @@
-import React, { useState, useEffect, HtmlHTMLAttributes } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from "./page.module.css";
 
 import { Header } from './components/headerBar';
@@ -114,12 +114,12 @@ export default function Home() {
           <Overview/>
         </section>
 
-        <section id="Experience" className={styles.section}>
-          <Experience/>
-        </section>
-
         <section id="Projects" className={styles.section}>
           <Projects/>
+        </section>
+
+        <section id="Experience" className={styles.section}>
+          <Experience/>
         </section>
 
         <section id="Education" className={styles.section}>

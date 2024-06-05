@@ -1,11 +1,11 @@
 import { FunctionComponent } from "react"
 
 export type CardProps = {
-  Employer: string[]
-  Job: string,
-  Description: string,
+  Name: string,
   img: string,
+  Description: string,
   link: string,
+  gitHub: string,
 }
 
 export type CardComponent = FunctionComponent<CardProps>

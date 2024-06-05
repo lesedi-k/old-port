@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect, HtmlHTMLAttributes } from 'react'
+import React, { useState } from 'react'
 
 import styles from "../page.module.css"
 import wabfIcon from "../assets/wabf.png"
@@ -108,7 +108,7 @@ export default function Experience() {
     
     return (
         <div 
-            className={`${styles.blackTopRightBottomLeft}`}
+            className={`${styles.blackTopLeftBottomRight }`}
             style={{alignItems: "center", textAlign:"left", paddingInline:100,
                     height: "90vh",  width: "100%",  
                 }}
