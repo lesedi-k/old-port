@@ -16,6 +16,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import stas from "../assets/stas.png"
 import mentorLink from "../assets/mentorLink.png"
 import ggle from "../assets/ggle.png"
+import vvi from "../assets/vvi.png"
 
 
 export default function Projects() {
@@ -39,14 +40,14 @@ export default function Projects() {
             Description: "Built a google-based search engine that was composed of a frontend, Crawler, Indexer and Page Rank and dynamic server.",
             img: ggle,
             link: "",
-            gitHub: "https://github.com/CassieHorwege/mentorLink",
+            gitHub: "",
         },
         {
-            Name: "ClothesMatcher",
-            Description: "Developed and designed UI for clothes sharing initiatve.",
-            img: "",
-            link: "",
-            gitHub: "https://github.com/cis350/project-team40",
+            Name: "IoT VVI Pacemaker",
+            Description: "Engineered a VVI cardiac pacemaker.",
+            img: vvi,
+            link: "https://docs.google.com/document/d/15ue-MLZ_eUMnaUnijOEBE9Z2wMQg2p_sMp4-jTsFyRw/edit?usp=sharing",
+            gitHub: "",
         },
         {
             Name: "Shell-based Operating System",
@@ -56,12 +57,13 @@ export default function Projects() {
             gitHub: "https://github.com/CIS548/22fa-project-2-group-27"
         },
         {
-            Name: "IoT VVI Pacemaker",
-            Description: "Engineered a VVI cardiac pacemaker.",
+            Name: "ClothesMatcher",
+            Description: "Developed and designed website and mobile app for clothes sharing initiatve.",
             img: "",
             link: "",
-            gitHub: "",
+            gitHub: "https://github.com/cis350/project-team40",
         },
+        
     ]
     
     return (
@@ -124,5 +126,6 @@ export default function Projects() {
                     </div>
             </div>
         </div>
+        
     );
 }

@@ -62,17 +62,19 @@ export const Card: CardComponent = ({Name, Description, img, link, gitHub}) => {
                 <h3 style={{fontWeight: 300 }}> {Description} </h3>
 
                 <div style={{marginTop: "1%"}}>
-                    <a 
-                        href={gitHub}
-                        style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "14pt"}}
-                    >
-                        <img
-                        src={githubIcon}
-                        width={40}
-                        alt="Github Icon"
-                        style={{filter:"invert(100%)"}}
-                        />
+                    {gitHub && 
+                        <a 
+                            href={gitHub}
+                            style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "14pt"}}
+                        >
+                            <img
+                            src={githubIcon}
+                            width={40}
+                            alt="Github Icon"
+                            style={{filter:"invert(100%)"}}
+                            />
                     </a>
+                    }
 
                     {link !== "" &&
                         <a 
