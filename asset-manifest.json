@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/lesedik/static/css/main.0acf9c8a.css",
-    "main.js": "/lesedik/static/js/main.f65cc84d.js",
+    "main.css": "/lesedik/static/css/main.ef95dfa8.css",
+    "main.js": "/lesedik/static/js/main.bdbae543.js",
     "static/js/453.ede74042.chunk.js": "/lesedik/static/js/453.ede74042.chunk.js",
+    "static/media/stas.png": "/lesedik/static/media/stas.1dbf8cf35e56d90c5c7a.png",
+    "static/media/mentorLink.png": "/lesedik/static/media/mentorLink.bf3947aea123f483849d.png",
+    "static/media/ggle.png": "/lesedik/static/media/ggle.77e350df0e1bfdb09ebf.png",
     "static/media/wabf.png": "/lesedik/static/media/wabf.343df8b236e0b43a6490.png",
     "static/media/mail.png": "/lesedik/static/media/mail.b59bd8fefe24b2047c80.png",
     "static/media/slice.jpg": "/lesedik/static/media/slice.df3fc2828edf97a8c1e0.jpg",
@@ -10,13 +13,14 @@
     "static/media/github.png": "/lesedik/static/media/github.baa8492565d00f6df19c.png",
     "static/media/partition.png": "/lesedik/static/media/partition.e22a84acd5c3816f99ca.png",
     "static/media/linkedin.webp": "/lesedik/static/media/linkedin.aa0a6b93275c33e6ecab.webp",
+    "static/media/redirect.svg": "/lesedik/static/media/redirect.eb94cbee470f12f999745563467be8dd.svg",
     "index.html": "/lesedik/index.html",
-    "main.0acf9c8a.css.map": "/lesedik/static/css/main.0acf9c8a.css.map",
-    "main.f65cc84d.js.map": "/lesedik/static/js/main.f65cc84d.js.map",
+    "main.ef95dfa8.css.map": "/lesedik/static/css/main.ef95dfa8.css.map",
+    "main.bdbae543.js.map": "/lesedik/static/js/main.bdbae543.js.map",
     "453.ede74042.chunk.js.map": "/lesedik/static/js/453.ede74042.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0acf9c8a.css",
-    "static/js/main.f65cc84d.js"
+    "static/css/main.ef95dfa8.css",
+    "static/js/main.bdbae543.js"
   ]
 }
