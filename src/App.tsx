@@ -16,7 +16,7 @@ export default function Home() {
   const [headerBar, setHeaderBar] = useState<HTMLElement | null>(null);
 
 
-  const Items = ["About", "Experience", "Projects", "Education"];
+  const Items = ["About", "Projects", "Experience", "Education"];
 
   function scrollToSection(sectionId: string) {
     
