@@ -18,14 +18,10 @@ export const SideBar: SideComponent = ({Items, onClick, selected}) => {
                     >
                         <div>
                             <div 
-                                className={`${styles.cardBlur} ${styles.cardGrad}`}
+                                className={`${styles.cardBlur} ${styles.cardGrad} ${index === selected && styles.buttonColor} ${styles.glassLines}`}
                                 style={{ 
-                                    backgroundColor: index === selected ? "rgba(29, 224, 224, 0.7)":  "", 
                                     height: 50, width: 50, 
                                     borderRadius: 50, marginRight: 20,
-                                    borderColor: "white",
-                                    borderStyle: "solid",
-                                    borderWidth: "0.1px 0 0 0.1px",
                                 }}
                             >
                             </div>    

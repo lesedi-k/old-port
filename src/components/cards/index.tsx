@@ -10,25 +10,15 @@ import redirectIcon from "../../assets/redirect.svg"
 import { CardComponent } from "./types"
 
 export const Card: CardComponent = ({Name, Description, img, link, gitHub}) => {
-
-
     const [hover, setHover] = useState(false);
-
-    const handleClick = () => {
-        if (link !== "") window.location.href = link 
-    };
-    console.log(img === "")
-
+    
     return (
         <div
             title={Name}
-            className={`${styles.cardBlur} ${styles.cardGrad}`}
+            className={`${styles.cardBlur} ${styles.cardGrad}  ${styles.glassLines}`}
             style={{
                 display: "flex",
                 flexDirection: "column",
-                borderColor: "white",
-                borderStyle: "solid",
-                borderWidth: "0.5px 0 0 0.5px",
                 borderRadius:"20px", 
                 margin: "1% 1%" ,
                 textAlign: "center",

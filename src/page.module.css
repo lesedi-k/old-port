@@ -132,6 +132,17 @@
   backdrop-filter: blur(10px);
 }
 
+.glassLines {
+  border-color: white;
+  border-style: solid;
+  border-width: 0.1px 0 0 0.1px;
+}
+
+.buttonColor {
+  background-color: rgba(75, 155, 179, 0.5)
+}
+
+
 
 .section {
   display: flex;
@@ -148,8 +159,6 @@
 /*
   Section animations
 */
-
-
 .slideUp2 {
   animation: slideUp 2s ease forwards;
 }
@@ -368,8 +377,6 @@
   }
 
 
-
-
   .description p {
     align-items: center;
     inset: 0 0 auto;
@@ -426,3 +433,4 @@
     transform: rotate(0deg);
   }
 }
+

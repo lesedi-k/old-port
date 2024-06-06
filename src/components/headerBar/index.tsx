@@ -30,12 +30,11 @@ export const Header: HeaderComponent = ({Items, onClick}) => {
                 <p>Built by <span style={{fontWeight:"bold"}}>Lesedi Kereteletswe</span></p>
                 <div 
                     id="slider"
-                    className={`${styles.cardBlur} ${styles.cardGrad}`}
+                    className={`${styles.cardBlur} ${styles.cardGrad} ${styles.buttonColor}`}
                     style={{
                         width: "90px",
                         left: 10,
                         height: "80%",
-                        backgroundColor: "rgba(75, 155, 179, 0.4)",
                         position:"absolute",
                         top: "10%",
                         borderRadius: "30px",

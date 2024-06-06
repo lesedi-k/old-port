@@ -2,11 +2,15 @@
 import React, { useState } from 'react'
 
 import styles from "../page.module.css"
+
+/* Assets */
 import wabfIcon from "../assets/wabf.png"
 import slice from  "../assets/slice.jpg"
 import cis from  "../assets/seas.png"
 import partiton from  "../assets/partition.png"
+import redirectIcon from "../assets/redirect.svg"
 
+/* Components */
 import { SideBar } from "../components/SideBar";
 
 export default function Experience() {
@@ -17,92 +21,46 @@ export default function Experience() {
             Employer:["Slice HealthTech"],
             Job: "Venture Studio Operator",
             img: slice,
-
-            title: "The Execution of Product-Mindedness",
-            story: "At SLICE HealthTech, my work revolved around tackling the intricate web \
-                    of data interoperability issues between healthcare facilities. It was an \
-                    ambitious undertaking – taking a broad problem statement and unpacking it \
-                    layer by layer until we could map out the entire landscape. But that was just \
-                    the beginning. In true entrepreneurial spirit, we took that deep understanding \
-                    and transformed it into the genesis of our patient-facing solution.\
-                    \n\n\
-                    The true joy of my role lied in the challenges of cartography, of map-making itself.\
-                    I meticulously mapped problems to questions, questions to exploration activities, \
-                    and those activities iteratively led us towards market-validated solutions. \
-                    Each step raised new inquiries to be pursued relentlessly.\
-                    \n\n\
-                    On the research front, I grappled with questions like: What were we really trying \
-                    to uncover when building this problem space? What information did we need to \
-                    propel us forward, and how could we acquire it? What functionalities must we build, \
-                    and who were the essential experts we needed to engage?\
-                    \n\n\
-                    Pivoting to product development brought forth a new set of critical questions: Who \
-                    is our end-user? What are their current behaviors and pain points? How do they \
-                    experience this problem we're aiming to solve? How do they perceive our proposed \
-                    solution? I've worked across the full product design and development pipeline – \
-                    UI/UX design, frontend and backend development. My driving purpose is viewing \
-                    technology through the lens of its utility to end-users.\
-                    \n\n\
-                    As I delved deeper, extracting insights through activities like consulting industry \
-                    experts, patients, doctors and other vital stakeholders, developing software \
-                    prototypes and MVPs, a layer of program management was paramount. At each stage:\
-                    \n\n\
-                    First, I established a hypothesis – something specific and falsifiable that needed \
-                    validating or rejecting. Then, I meticulously designed activities to attain those \
-                    answers, be it stakeholder interviews, user testing or technical prototyping. \
-                    Finally, I integrated those findings into the evolving, complex map of the problem \
-                    domain, allowing us to iterate on increasingly refined solutions aligned with key \
-                    criteria.\
-                    \n\n\
-                    My tenure as Tech Lead at SLICE HealthTech exposed me to the intricacies of harmonizing \
-                    product strategies with genuine user needs, particularly in the labyrinthine \
-                    healthcare arena. It was mapped discovery and purposeful creation colliding, \
-                    an intersection where truly impactful products take form.\
-                    ",
-            photos: "",
+            work: ["Tech lead in a venture poised to solve the medical data interoperability problems between health care providers.",
+                    "Conducted primary research with doctors, pharmacists, consultants, and patients to explore product-market fit and market penetration strategies.",
+                    "Developed software based on lean cost constraints, data compliance and privacy standrads, market feedback."],
+            link: ""
         },
         {
             Employer: ["Partition"],
             Job: "Entrepreneur/ Full-Stack Developer",
             img: partiton,
-            title: "Technological Utility",
-            story: "Tech's increasing connectedness, progressing from plugging in variables to \
-                    functions, classes, and now easily integrating specialized software through \
-                    APIs, has changed the complexity and specialization of what can be plugged in.\
-                    This has transformed the skills required to build solutions, making it easier \
-                    than ever due to plug-and-play, albeit with the risk of buying into trendiness \
-                    and falling into the masses. This necessitated a focus on standing out by building \
-                    for the user, where the underlying power lies in the plug-and-play world's ability \
-                    for rapid iteration.\
-                    \n\n\ More Coming Soon!",
-            photos: "",
+            work: ["Developed a personal finance manangment platform, designed \
+                    to help users manage their expenses across multiple accounts",
+                    ],
+            link: "https://youtu.be/Xr3_mRbtEBc"
         },
         {
             Employer:["University of Pennsylvania","Department of Computer & Information Science" ],
             Job:"CIS 3500: Teaching Assistant",
             img: cis,
-            title: "People & First Principles",
-            story: "How to motivate teams and manage processes when working towards a goal...\
-                    \n\n\ More Coming Soon!",
-            photos: "",
+            work: ["Managed a semester-long web & mobile development project with a team of 5 students",
+            "Implemented effective sprint planning to achieve weekly project milestones",
+            "Guest taught a lecture and regularly onboarded students to new web development technologies"],
+            link: "https://cis-3500.github.io/docs/example/staff/"
         },
         {
             Employer:["University of Pennsylvania","Department of Electrical & Systems Engineering" ],
             Job:"ESE 2150: Teaching Assistant",
             img: cis,
-            title: "The Transfer of Intuition",
-            story: "The art of teaching passing your intuition by talking through your thought process...\
-                    \n\n\ More Coming Soon!",
-            photos: "",
+            work: ["Led weekly office hours where I taught analogue circuit material to students.",
+            "Designed grading scheme that achieve consistency & grade assignments, quizzes and exams.",
+            "Regularly addressed student questions and queries on discussion boards regarding analogue circuit material."],
+            link: "https://detkin.ese.upenn.edu/ese-215/"
         },
         {
             Employer: ["Wharton Africa Business Forum"],
             Job: "Vice President of Entertainment",
-            img:wabfIcon,
-            title: "The Communal Context of Goal Reaching",
-            story: "Coordinating all aspects of entertainment, performances, and festivites for the US's longest running Africa business conference...\
-                    \n\n\ More Coming Soon!",
-            photos: "",
+            img: wabfIcon,
+            work: ["Secured venues, booked headline artists, negotiated with vendors,\
+                    and planned events to deliver a high-quality experience for over \
+                    250 conference attendees."],
+            link: "https://www.forum.whartonafrica.com"
         },
     ]
     
@@ -126,8 +84,11 @@ export default function Experience() {
                     <div   
                         className={`${styles.cardBlur} ${styles.cardGrad}`} 
                         style={{
-                            display: "flex", flex:2, flexDirection: "column",
-                            height: 520,
+                            display: "flex", 
+                            flexDirection: "column", 
+                            flex: 1, 
+                            marginRight: "10%", marginTop: "2%",
+                            height: 450,
                             borderColor: "white",
                             borderStyle: "solid",
                             borderWidth: "0.5px 0 0 0.5px",
@@ -136,14 +97,51 @@ export default function Experience() {
                             paddingBlock: "30px",
                             boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
                             overflow: "auto",
+                            textAlign: "center",
+                            alignItems: "center",
+                            justifyContent: "center"
                         }}
                     >
+                        <img src={exp[selected].img} height="30%" style={{borderRadius: 10, marginBottom: 10}}/>
                         <h1>{exp[selected].Employer[0]}</h1>
                         {exp[selected].Employer.length > 1 && <h1>{exp[selected].Employer[1]}</h1>}
                         <h3 style={{color: "#cffcfc", marginBottom: 10 }}>{exp[selected].Job}</h3>
+                        <ul style={{textAlign: "left", width: "75%"}}>
+                            {exp[selected].work.map((w)=>(
+                                <li>{w}</li>
+                            ))}
+                        </ul>
 
-                        <h3 style={{marginTop: 10}}>{exp[selected].title}</h3>
-                        <p style={{whiteSpace: "pre-line"}}>{exp[selected].story}</p>
+                        {exp[selected].link !== "" ?
+                            <a 
+                                href={exp[selected].link} 
+                                style={{marginTop: 20, fontWeight: "bold"}}
+                            >
+                                <div 
+                                    className={`${styles.buttonColor}`}
+                                    style={{
+                                        display:"flex", alignItems:"center",
+                                        paddingBlock: 5, paddingInline: 15,
+                                        borderRadius: 500
+                                    }}
+                                >
+                                    <h3 style={{fontWeight: "bold"}}>Learn More</h3>
+                                    <img
+                                        src={redirectIcon}
+                                        width={30}
+                                        alt="Rediect"
+                                        style={{ filter:"invert(100%)"}}
+                                    />
+
+                                </div>
+                                
+                                
+                            </a> 
+                            : 
+                            <h3 style={{marginTop: 20}}>
+                                More coming soon...
+                            </h3>
+                    }  
 
                     </div>
                 </div>
