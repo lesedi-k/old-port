@@ -107,8 +107,8 @@ export default function Experience() {
                         {exp[selected].Employer.length > 1 && <h1>{exp[selected].Employer[1]}</h1>}
                         <h3 style={{color: "#cffcfc", marginBottom: 10 }}>{exp[selected].Job}</h3>
                         <ul style={{textAlign: "left", width: "75%"}}>
-                            {exp[selected].work.map((w)=>(
-                                <li>{w}</li>
+                            {exp[selected].work.map((w, index)=>(
+                                <li key={index}>{w}</li>
                             ))}
                         </ul>
 

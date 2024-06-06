@@ -60,6 +60,7 @@ export default function Overview() {
             {areas.map((a, index) => (
                 <div 
                     // onMouseEnter={() => setSelected(index)}
+                    key={a+""+index}
                     className={styles.overviewDiv}
                     style={{
                         display: "flex", 

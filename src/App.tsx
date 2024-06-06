@@ -22,7 +22,6 @@ export default function Home() {
     
     const targetHeading = document.getElementById(sectionId+"_heading");
     const targetSection = document.getElementById(sectionId);
-    console.log(targetSection)
 
     if (slider && targetHeading && headerBar) {
       //adjust slider position
@@ -69,8 +68,9 @@ export default function Home() {
         }
     
         //pick section
-        if (currentPosition >= sectionTop - 900 && currentPosition <= sectionBottom) {
+        if (currentPosition >= sectionTop - 300 && currentPosition <= sectionBottom) {
           const sectionId = section.getAttribute('id');
+          console.log(sectionId + ": " + currentPosition + " vs [t" + sectionTop + " :b" + sectionBottom + "]") 
           
           //move slider
           const targetHeading = document.getElementById(sectionId+"_heading");

@@ -75,8 +75,8 @@ export default function Education() {
                     marginTop:"2vh"
                 }}
                 >
-                    {classes.map((c) => (
-                        <Bubble key={c+"_id"} Skill={c.class} link={c.link}/>
+                    {classes.map((c, index) => (
+                        <Bubble key={c+"_id"+index} Skill={c.class} link={c.link}/>
                     ))}
                 </div>
             </div>
