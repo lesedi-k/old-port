@@ -67,39 +67,36 @@ export default function Experience() {
     return (
         <div 
             className={`${styles.blackTopLeftBottomRight }`}
-            style={{height: "100vh",  width: "100%"}}
+            style={{alignItems: "center", textAlign:"left", paddingInline:100,
+                    height: "90vh",  width: "100%",  
+                }}
         >
-            <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+            <div>
                 <h2 className={styles.h1} style={{marginTop: 50}}>Experience</h2>
                 <h3 style={{fontWeight: 200, fontSize:"20pt", marginBottom: 30}}>Learn more about my professional experiences</h3>
 
-                <div   
-                    className={`${styles.cardBlur} ${styles.cardGrad} ${styles.glassLines}`} 
-                    style={{
-                        display: "flex", 
-                        flexDirection: "row", 
-                        flex: 1, 
-                        width: 1100, 
-                        height: "100%",
-                        borderRadius:"20px", 
-                        boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
-                        overflow: "auto",
-                        alignItems: "center",
-                    }}
-                >  
+                <div style={{display: "flex", flexDirection: "row", width: "100%", height: "100%"}}>
                     <SideBar 
                         Items={exp} 
                         onClick={(event) => setSelected(event)}
                         selected={selected}
                     />
                     <div   
+                        className={`${styles.cardBlur} ${styles.cardGrad}`} 
                         style={{
                             display: "flex", 
                             flexDirection: "column", 
-                            flex: 2, 
-                            marginTop: "2%",
-                            height: 550,
-                            // borderInlineStart: "0.5px solid white",
+                            flex: 1, 
+                            marginRight: "10%", marginTop: "2%",
+                            height: 450,
+                            borderColor: "white",
+                            borderStyle: "solid",
+                            borderWidth: "0.5px 0 0 0.5px",
+                            borderRadius:"20px", 
+                            paddingInline: "30px",
+                            paddingBlock: "30px",
+                            boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
+                            overflow: "auto",
                             textAlign: "center",
                             alignItems: "center",
                             justifyContent: "center"

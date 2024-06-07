@@ -22,29 +22,31 @@ export const Card: CardComponent = ({Name, Description, img, link, gitHub}) => {
                 borderRadius:"20px", 
                 margin: "1% 1%" ,
                 textAlign: "center",
-                width: "90%",
+                width: "100%",
                 height: "70vh",
                 boxShadow: "inset 2px 2px 4px rgba(0, 0, 0, 0.1)",
+                
             }}
             onMouseEnter={()=> {setHover(true)}}
             onMouseLeave={()=>setHover(false)}
         >     
-            {img !== "" && !hover && <img
+            {(img !== "" && !hover) ? <img
                 src={img}
                 alt={Name[0]}
-                width="100%"
-                height="100%"
                 style={{
+                    width:"100%",
+                    height:"100%",
                     borderRadius:"20px", 
+                    opacity: !hover ? 1 : 0,
+                    transition: "all 1s ease-out-in"
                 }}
-            />}
-
-            {
-             (hover || img === "") && 
+            />
+            :
              <div style={{
                     display: "flex", flexDirection: "column", 
                     justifyContent: "center", alignSelf: "center", textAlign: "center", 
-                    width:"60%", height: "100%"
+                    width:"60%", height: "100%",
+                    transition: "all 1s ease-in-out" // Adding transition property
                 }}
             >
                 {img === "" && <h1 style={{fontSize: "20pt"}}>More coming soon...</h1> } 
@@ -63,7 +65,7 @@ export const Card: CardComponent = ({Name, Description, img, link, gitHub}) => {
                             alt="Github Icon"
                             style={{filter:"invert(100%)"}}
                             />
-                    </a>
+                        </a>
                     }
 
                     {link !== "" &&

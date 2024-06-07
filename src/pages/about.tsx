@@ -75,7 +75,7 @@ export default function About() {
             
             {/* Absolute Divs */}
             <div 
-                className={`${styles.cardBlur} ${styles.cardGrad} ${styles.slideLeft}`}
+                className={`${styles.cardBlur} ${styles.cardGrad} ${styles.glassLines} ${styles.slideLeft}`}
                 style={{
                     position: "absolute", 
                     right: "55%", 
@@ -84,9 +84,6 @@ export default function About() {
                     display: "flex",
                     flexDirection: "column",
                     textAlign: "left",
-                    borderColor: "white",
-                    borderStyle: "solid",
-                    borderWidth: "0.5px 0 0 0.5px",
                     borderRadius:"20px", 
                     paddingInline: "30px",
                     paddingBlock: "20px",
@@ -111,7 +108,7 @@ export default function About() {
             </div>
 
             <div 
-                className={`${styles.cardBlur} ${styles.cardGrad} ${styles.slideLeft}`}
+                className={`${styles.cardBlur} ${styles.cardGrad} ${styles.glassLines} ${styles.slideLeft}`}
                 style={{
                     position: "absolute", 
                     right: "30%", 
@@ -120,9 +117,6 @@ export default function About() {
                     display: "flex",
                     flexDirection: "column",
                     textAlign: "left",
-                    borderColor: "white",
-                    borderStyle: "solid",
-                    borderWidth: "0.5px 0 0 0.5px",
                     borderRadius:"20px", 
                     paddingInline: "30px",
                     paddingBlock: "20px",

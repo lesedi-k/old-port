@@ -33,7 +33,7 @@ export default function Projects() {
             Description: "Developed and Designed UX for an ML Powered Mentorship Matching website.",
             img: mentorLink,
             link: "",
-            gitHub: "",
+            gitHub: "https://github.com/CassieHorwege/mentorLink",
         },
         {
             Name: "Gooooooogle",
@@ -82,7 +82,7 @@ export default function Projects() {
                         <Swiper
                             initialSlide={0}
                             loop={true}
-                            modules={[EffectCoverflow, Navigation,]}
+                            modules={[EffectCoverflow, Navigation, Autoplay]}
                             spaceBetween={-100}
                             slidesPerView={1}
                             effect="coverflow"
@@ -98,11 +98,11 @@ export default function Projects() {
                                 nextEl: '.swiper-button-next',
                                 prevEl: '.swiper-button-prev',
                             }}
-                            // autoplay={{
-                            //     delay: 2500,
-                            //     disableOnInteraction: false,
-                            //     pauseOnMouseEnter: true,
-                            // }}
+                            autoplay={{
+                                delay: 3500,
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: true,
+                            }}
                             onSlideChange={() => console.log('slide change')}
                             onSwiper={() => console.log()}    
                             style={{
