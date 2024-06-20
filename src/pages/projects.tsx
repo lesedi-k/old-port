@@ -84,6 +84,8 @@ export default function Projects() {
                             loop={true}
                             modules={[EffectCoverflow, Navigation, Autoplay]}
                             spaceBetween={-100}
+                            width={1000}
+                            height={"auto"}
                             slidesPerView={1}
                             effect="coverflow"
                             centeredSlides={false}
@@ -121,8 +123,8 @@ export default function Projects() {
                             </SwiperSlide>    
                         ))}
                         </Swiper>
-                        <div className="swiper-button-next" style={{marginRight: "5%"}}/>
-                        <div className="swiper-button-prev" style={{marginLeft: "5%"}}/>
+                        <div className="swiper-button-next" style={{marginRight: "2%"}}/>
+                        <div className="swiper-button-prev" style={{marginLeft: "2%"}}/>
                     </div>
             </div>
         </div>
