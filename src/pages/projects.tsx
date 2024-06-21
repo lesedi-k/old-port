@@ -101,7 +101,7 @@ export default function Projects() {
                                 prevEl: '.swiper-button-prev',
                             }}
                             autoplay={{
-                                delay: 3500,
+                                delay: 7000,
                                 disableOnInteraction: false,
                                 pauseOnMouseEnter: true,
                             }}
