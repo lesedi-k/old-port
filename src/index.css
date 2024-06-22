@@ -14,8 +14,6 @@ code {
   font-size: 18pt;
 }
 
-
-
 @media screen and (max-width: 768px) {
   code {
     font-size: 14pt;
