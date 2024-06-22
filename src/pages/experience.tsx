@@ -78,7 +78,7 @@ export default function Experience() {
                     style={{
                         display: "flex", 
                         flex: 1, 
-                        width: "80vw", 
+                        width: "84vw", 
                         height: "100%",
                         borderRadius:"20px", 
                         boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
