@@ -29,7 +29,7 @@ export default function Home() {
       slider.style.left = leftOffest + "px";
 
       //adjust slider width
-      slider.style.width = (targetHeading.getBoundingClientRect().width + 35) + "px";
+      slider.style.width = (targetHeading.getBoundingClientRect().width + 40) + "px";
     }
     
     if (targetSection) {
@@ -75,19 +75,15 @@ export default function Home() {
           //move slider
           const targetHeading = document.getElementById(sectionId+"_heading");
           if (targetHeading && headerBar) {
-            const headerBarWidth = headerBar.getBoundingClientRect().width;
-            const leftOffest = targetHeading.getBoundingClientRect().left - headerBar.getBoundingClientRect().left - 20;
+            const leftOffest = targetHeading.getBoundingClientRect().left - headerBar.getBoundingClientRect().left - 15;
             slider.style.transition = 'left 0.3s ease, width 0.3s ease';
-
-            slider.style.left = leftOffest * 100 / headerBarWidth + "%";
-            slider.style.width = (targetHeading.getBoundingClientRect().width + 40) * 100 / headerBarWidth + "%";
+            slider.style.left = leftOffest + "px";
+            slider.style.width = (targetHeading.getBoundingClientRect().width + 30) + "px";
           }
         }
       })
     }
   }
-
-  
 
   window.addEventListener('scroll', () => {
     onScroll();

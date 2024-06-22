@@ -8,7 +8,7 @@ export const SideBar: SideComponent = ({Items, onClick, selected}) => {
             className={`${styles.cardBlur} ${styles.cardGrad}`}
             style={{
                 display: "flex", flex:1, flexDirection: "column",
-                height: 570, 
+                height: 560, 
                 justifyItems: "space-between",
                 alignItems: "flex-start"
             }}

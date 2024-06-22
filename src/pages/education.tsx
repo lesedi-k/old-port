@@ -55,16 +55,16 @@ export default function Education() {
         <div
         className={`${styles.blackTopRightBottomLeft}`}
             style={{alignItems: "center", textAlign:"center", paddingInline:100 ,
-                    width:"100%", height: "80vh",  
+                    width:"100%", height: "100vh",  
                 }}
         > 
             <div> {/* Div here for animation reasons */}
-                <h1 className={styles.h1} style={{marginTop:40}}>Education</h1>
-                <h1 style={{fontSize: "40pt"}}>University of Pennsylvania</h1>
-                <h2 style={{fontSize: "30pt", fontWeight: 300,}}>Bachelor of Science in Computer Engineering</h2>	
-                <h2 style={{fontSize: "20pt", fontWeight: 600}}>May 2024</h2>
+                <h1 style={{marginTop:40}}>Education</h1>
+                <h1>University of Pennsylvania</h1>
+                <h2 style={{fontWeight: 300,}}>Bachelor of Science in Computer Engineering</h2>	
+                <h3 style={{fontWeight: 600}}>May 2024</h3>
                 
-                <h1 style={{marginTop: "30px", fontSize: "25pt"}}>Relavent Coursework:</h1>
+                <h4 style={{marginTop: "30px", fontSize: "25pt"}}>Relavent Coursework:</h4>
                 <h3 style={{fontWeight: 200, fontSize:"18pt", color: "grey"}}>Click to learm more about the course</h3>
 
                 <div style={{

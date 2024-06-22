@@ -1,6 +1,6 @@
 'use client'
 import styles from "../page.module.css"
-import React, { useState, useEffect} from 'react'
+import React, { useState } from 'react'
 
 export default function Overview() {
     const [selected, setSelected] = useState(-1);
@@ -28,10 +28,10 @@ export default function Overview() {
 
     return (
         <div 
-        className={`${styles.blackTopLeftBottomRight }`}
+            className={`${styles.blackTopLeftBottomRight}`}
             style={{textAlign: "left",
                     width:"100%", height: "20vh",  
-                    display: "flex", flexDirection: "row",
+                    display: "flex",
                 }}
         > 
 
@@ -39,56 +39,55 @@ export default function Overview() {
                 onMouseEnter={() => setSelected(-1)}
                 style={{
                     display: "flex", 
-                    flex: 1.3,
+                    flex: 1.1,
                     flexDirection: "column",
-                    minWidth: "25%",
-                    paddingInline: 40,
-                    alignItems: "center"
+                    alignItems: "center",
+                    justifyContent: "center",
                 }}
             >
-                <h1 style={{
+                <h2 style={{
                         width: "80%", 
-                        fontSize: 50 , 
-                        marginTop: 30,
-                        // marginTop: 300
+                        marginInline: 40,
                     }}
                 >
                     Areas of Expertise 
-                </h1>
+                </h2>
                 {/* <p>What I build with those skills</p> */}
             </div>    
-            {areas.map((a, index) => (
-                <div 
-                    // onMouseEnter={() => setSelected(index)}
-                    key={a+""+index}
-                    className={styles.overviewDiv}
-                    style={{
-                        display: "flex", 
-                        flexDirection: "column",
-                        flex: index === selected ? 7 : 1, 
-                        paddingInline: index === selected ? 40 : 20,
-                        backgroundColor: "rgba(17, 156, 156, 0." + (index + 1) +")",
-                        transition: "flex 0.01s ease-out",
-                        justifyContent: "center"
-                    }}
-                >
-                    <h1 
-                        className={`${styles.slideLeft}`}
+            <div 
+                style={{display:"flex", flex:4}}
+                className={styles.areaList}
+            >
+                {areas.map((a, index) => (
+                    <div 
+                        onMouseEnter={() => setSelected(index)}
+                        key={a+""+index}
+                        // className={styles.overviewDiv}
                         style={{
-                            marginLeft: "-60%",
-                            width: "80%", 
-                            fontSize: 30, 
-                            // marginTop: index === selected ? 50 : 500
+                            display: "flex", 
+                            flexDirection: "column",
+                            minWidth: "fit-content",
+                            flex: 1, 
+                            // paddingInline: index === selected ? 40 : 20,
+                            backgroundColor: "rgba(17, 156, 156, 0." + (index + 1) +")",
+                            transition: "flex 0.01s ease-out",
+                            justifyContent: "center",
+                            textAlign: "left"
                         }}
                     >
-                        {a.expertise}
-                    </h1>
-                    {   index === selected && 
-                        <p>{a.decription}</p>
-                    }
-                </div>    
-            ))}
-
+                        <h3 
+                            className={`${styles.slideLeftText}`}
+                            style={{
+                                width: "80%",
+                                fontWeight:"normal"
+                            }}
+                        >
+                            {a.expertise}
+                        </h3>
+                    </div>    
+                ))}
+            </div>
+            
                     
         </div>
     );

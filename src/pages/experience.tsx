@@ -70,7 +70,7 @@ export default function Experience() {
             style={{height: "100vh",  width: "100%"}}
         >
             <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
-                <h2 className={styles.h1} style={{marginTop: 50}}>Experience</h2>
+                <h1 style={{marginTop: 50}}>Experience</h1>
                 <h3 style={{fontWeight: 200, fontSize:"20pt", marginBottom: 30}}>Learn more about my professional experiences</h3>
 
                 <div   

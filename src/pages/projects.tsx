@@ -74,7 +74,7 @@ export default function Projects() {
             }}
         >
             <div> {/* Div here for animation reasons */}
-                <h1 className={styles.h1}>Projects</h1>
+                <h1>Projects</h1>
 
                 <div style={{display:"flex", textAlign:"left", marginTop: 20,
                             justifyContent:"center", scrollbarWidth: "none", width: "100%",

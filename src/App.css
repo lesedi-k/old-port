@@ -95,42 +95,91 @@ a {
   }
 }
 
+p {
+  font-size: 12pt;
+}
+h1 {
+  font-size: 50pt;
+}
+
+h2 {
+  font-size: 30pt;
+}
+
+h3 {
+  font-size: 20pt;
+}
+
+.aboutBioDiv {
+  display: flex; 
+  flex: 3.5;
+  flex-direction: column;
+  padding-top: 150; 
+  margin-inline:100
+}
+
+
 @media screen and (max-width: 1024px) {
-  p {
-    font-size: 18px;
-  }
+    p {
+      font-size: 11pt;
+    }
     h1 {
-      font-size: 30px;
+      font-size: 40pt;
     }
   
     h2 {
-      font-size: 24px;
+      font-size: 30pt;
+    }
+
+    h3 {
+      font-size: 20pt;
     }
 
   .main {
     flex-direction: column; /* This is already set for the main class, but you can customize other properties for mobile */
     justify-content: center; /* Example adjustment */
     padding: 20px; /* Example addition for mobile padding */
+  }
+
+  .aboutBioDiv {
+    display: flex;
+    flex: 3.5;
+    flex-direction: column;
+    padding-top: 150px;
+    margin-inline: 100px;
   }
 }
 
 /* Small screens (large phones) */
 @media screen and (max-width: 768px) {
   p {
-    font-size: 18px;
+    font-size: 10pt;
   }
-    h1 {
-      font-size: 30px;
-    }
   
-    h2 {
-      font-size: 24px;
-    }
+  h1 {
+    font-size: 30pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
+
+  h3 {
+    font-size: 15pt;
+  }
 
   .main {
     flex-direction: column; /* This is already set for the main class, but you can customize other properties for mobile */
     justify-content: center; /* Example adjustment */
     padding: 20px; /* Example addition for mobile padding */
+  }
+
+  .aboutBioDiv {
+    display: flex;
+    flex: 3.5;
+    flex-direction: column;
+    padding-top: 150px;
+    margin-inline: 100px;
   }
 }
 
@@ -138,19 +187,31 @@ a {
 /* Extra small screens (small phones) */
 @media screen and (max-width: 480px) {
   p {
-    font-size: 18px;
+    font-size: 11pt;
   }
-    h1 {
-      font-size: 30px;
-    }
-  
-    h2 {
-      font-size: 24px;
-    }
+  h1 {
+    font-size: 30pt;
+  }
 
-    .main {
-      flex-direction: column; 
-      justify-content: center;
-      padding: 20px; 
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 13pt;
+  }
+
+  .main {
+    flex-direction: column; 
+    justify-content: center;
+    padding: 20px; 
+  }
+
+    .aboutBioDiv {
+      display: flex;
+      flex: 3.5;
+      flex-direction: column;
+      padding-top: 150px;
+      margin-inline: 100px;
     }
 }

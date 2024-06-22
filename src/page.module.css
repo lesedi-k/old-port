@@ -205,6 +205,20 @@
   }
 }
 
+.slideLeftText {
+  animation: slideLeftText 2s ease forwards;
+}
+@keyframes slideLeftText {
+  from {
+    transform: translate(100%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(20%, 0);
+    opacity: 1;
+  }
+}
+
 
 .slideTopRight {
   animation: slideTopRight 3s ease forwards;
@@ -258,7 +272,7 @@
 /* Typing effect animation */
 @keyframes typing {
   from { width: 0; }
-  to { width: 53%; }
+  to { width: 23ch; }
 }
 
 /* Blinking cursor animation */
@@ -356,6 +370,25 @@
   }
 }
 
+.aboutCard {
+  position: absolute; 
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 15px; 
+  padding-inline: 30px;
+  padding-block: 20px;
+  z-index: 2;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0,0,0,0.4)
+}
+
+.storyCard {
+  right: 55vw; 
+  bottom: 10%;
+  width: 47vw;
+}
+
 /* Mobile */
 @media (max-width: 700px) {
   .content {
@@ -440,6 +473,7 @@
   border-radius: 50px;
   margin-top: 3vh;
   padding: 20px;
+  align-items: center;
   justify-content: space-between;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
@@ -470,6 +504,73 @@
   margin-left: 10px;
 }
 
+.skillsCard {
+  right: 30vw; 
+  top: 120px;
+  width: 35vw;
+}
+
+.aboutBioDiv {
+  padding-top:150px;
+}
+
+.areasFlex {
+  flex-direction: column,
+}
+
+@media screen and (max-width: 1024px) {
+  .headerBar {
+      width: 80%;
+      height: 50px;
+      padding: 12px;
+      border-radius: 30px;
+      margin-top: 5vh;
+      column-gap: 5px;
+      align-items: center;
+  }
+
+  .headerBar p {
+      margin-right: 20px;
+      font-size: 12pt;
+  }
+
+  .headerTitleDiv {
+    display:flex;
+    margin-left: 10px;
+    justify-content:"space-between";
+    width: 100%;
+  }
+
+  .slider {
+    width: 69px;
+    height: 80%;
+  }
+
+  .hideOnMobile {
+    display: block;
+  }
+
+  .storyCard {
+    right: 70vw; 
+    bottom: 10%;
+    width: 70vw;
+  }
+
+  .skillsCard {
+    right: 50vw; 
+    top: 120px;
+    width: 60vw;
+  }
+
+  .areaList{
+    flex-wrap: wrap;
+  }
+
+  .areasFlex {
+    flex-direction: column,
+  }
+}
+
 
 @media (max-width: 768px) {
   .headerBar {
@@ -493,18 +594,35 @@
   }
 
   .slider {
-      width: 60px;
-      height: 70%;
+      width: 65px;
+      height: 80%;
   }
 
   .hideOnMobile {
     display: none;
+  }
+
+  .storyCard {
+    right: 70vw; 
+    bottom: 10%;
+    width: 80vw;
+  }
+
+  .skillsCard {
+    right: 50vw; 
+    top: 160px;
+    width: 60vw;
+  }
+
+  .aboutBioDiv {
+    padding-top:270px;
   }
 }
 
 @media (max-width: 480px) {
   .headerBar {
       width: 90%;
+      padding: 1%;
       height: 5vh;
       border-radius: 30px;
       margin-top: 2vh;
@@ -526,11 +644,24 @@
   }
 
   .slider {
-      width: 60px;
+      width: 63px;
       height: 80%;
+      margin-left: -5px;
   }
 
   .hideOnMobile {
     display: none;
+  }
+
+  .storyCard {
+    right: 80vw; 
+    bottom: 10%;
+    width: 50vw;
+  }
+
+  .skillsCard {
+    right: 60vw; 
+    top: 160px;
+    width: 60vw;
   }
 }

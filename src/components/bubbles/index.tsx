@@ -1,5 +1,4 @@
 import { BubbleComponent } from "./types"
-import React, { useEffect } from 'react';
 import styles from "../../page.module.css";
 
 export const Bubble: BubbleComponent = ({Skill, link}) => {
@@ -10,10 +9,10 @@ export const Bubble: BubbleComponent = ({Skill, link}) => {
             className={link === "" ? styles.bubbleDivNoHref : styles.bubbleDiv}
         >
             { link === "" ? 
-                <p style={{fontSize: "100%"}}>{Skill} </p>
+                <p>{Skill} </p>
             :
                 <a href={link}>
-                    <p style={{fontSize: "100%"}}>{Skill} </p>
+                    <p>{Skill} </p>
                 </a>
             }
         </div>
