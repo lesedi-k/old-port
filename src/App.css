@@ -118,7 +118,6 @@ h3 {
   margin-inline:100
 }
 
-
 @media screen and (max-width: 1024px) {
     p {
       font-size: 11pt;
@@ -128,12 +127,13 @@ h3 {
     }
   
     h2 {
-      font-size: 30pt;
+      font-size: 20pt;
     }
 
     h3 {
-      font-size: 20pt;
+      font-size: 16pt;
     }
+
 
   .main {
     flex-direction: column; /* This is already set for the main class, but you can customize other properties for mobile */

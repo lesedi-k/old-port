@@ -54,8 +54,8 @@ export default function Education() {
     return (
         <div
         className={`${styles.blackTopRightBottomLeft}`}
-            style={{alignItems: "center", textAlign:"center", paddingInline:100 ,
-                    width:"100%", height: "100vh",  
+            style={{alignItems: "center", textAlign:"center", paddingInline: "8%", paddingBlockEnd: "12%",
+                    // width:"100%", height: "100vh",  minHeight: "fit-content"
                 }}
         > 
             <div> {/* Div here for animation reasons */}

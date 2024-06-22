@@ -60,13 +60,12 @@ export default function Overview() {
             >
                 {areas.map((a, index) => (
                     <div 
+                        className={styles.skillFitContent}
                         onMouseEnter={() => setSelected(index)}
                         key={a+""+index}
-                        // className={styles.overviewDiv}
                         style={{
                             display: "flex", 
                             flexDirection: "column",
-                            minWidth: "fit-content",
                             flex: 1, 
                             // paddingInline: index === selected ? 40 : 20,
                             backgroundColor: "rgba(17, 156, 156, 0." + (index + 1) +")",

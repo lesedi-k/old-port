@@ -518,6 +518,25 @@
   flex-direction: column,
 }
 
+.flexSwapRC {
+  flex-direction: row;
+}
+
+.flexSwapCR {
+  flex-direction: column;
+}
+
+.lineFlex {
+  border-bottom: 0.2px solid white;
+}
+
+.sideCompHeight{
+  height: 70vh; 
+  width: fit-content;
+}
+
+
+
 @media screen and (max-width: 1024px) {
   .headerBar {
       width: 80%;
@@ -566,6 +585,7 @@
     flex-wrap: wrap;
   }
 
+
   .areasFlex {
     flex-direction: column,
   }
@@ -588,7 +608,7 @@
 
   .headerTitleDiv {
     display:flex;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     justify-content:"space-between";
     width: 100%;
   }
@@ -616,6 +636,28 @@
 
   .aboutBioDiv {
     padding-top:270px;
+  }
+
+  .flexSwapRC {
+    flex-direction: column;
+  }
+
+  .flexSwapCR {
+    flex-direction: row;
+  }
+
+  .lineFlex {
+    border-right: 0.2px solid white;
+    border-bottom: none;
+  }
+
+  .skillFitContent {
+    min-width: fit-content;
+  }
+
+  .sideCompHeight{
+    height: 20vh; 
+    width: fit-content;
   }
 }
 

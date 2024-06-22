@@ -67,24 +67,26 @@ export default function Experience() {
     return (
         <div 
             className={`${styles.blackTopLeftBottomRight }`}
-            style={{height: "100vh",  width: "100%"}}
+            style={{height: "fit-content",  width: "100%"}}
         >
             <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                 <h1 style={{marginTop: 50}}>Experience</h1>
-                <h3 style={{fontWeight: 200, fontSize:"20pt", marginBottom: 30}}>Learn more about my professional experiences</h3>
+                <h3 style={{fontWeight: 200, marginBottom: 30}}>Learn more about my professional experiences</h3>
 
                 <div   
-                    className={`${styles.cardBlur} ${styles.cardGrad} ${styles.glassLines}`} 
+                    className={`${styles.cardBlur} ${styles.cardGrad} ${styles.glassLines} ${styles.flexSwapRC}`} 
                     style={{
                         display: "flex", 
-                        flexDirection: "row", 
                         flex: 1, 
-                        width: 1100, 
+                        width: "80vw", 
                         height: "100%",
                         borderRadius:"20px", 
                         boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.1)",
-                        overflow: "auto",
-                        alignItems: "center",
+                        alignItems: "center",                
+                        overflow: "auto", 
+                        overflowX: "auto", 
+                        overflowY: "hidden", 
+                        position: "relative", 
                     }}
                 >  
                     <SideBar 
@@ -98,20 +100,20 @@ export default function Experience() {
                             flexDirection: "column", 
                             flex: 2, 
                             marginTop: "2%",
-                            height: 550,
-                            // borderInlineStart: "0.5px solid white",
+                            minHeight: 550,
                             textAlign: "center",
                             alignItems: "center",
-                            justifyContent: "center"
+                            justifyContent: "center",
+                            overflow: "auto",
                         }}
                     >
-                        <img src={exp[selected].img} height="30%" style={{borderRadius: 10, marginBottom: 10}}/>
-                        <h1>{exp[selected].Employer[0]}</h1>
-                        {exp[selected].Employer.length > 1 && <h1>{exp[selected].Employer[1]}</h1>}
+                        <img src={exp[selected].img} height="100vw" style={{borderRadius: 10, marginBottom: 10}}/>
+                        <h2>{exp[selected].Employer[0]}</h2>
+                        {exp[selected].Employer.length > 1 && <h2>{exp[selected].Employer[1]}</h2>}
                         <h3 style={{color: "#cffcfc", marginBottom: 10 }}>{exp[selected].Job}</h3>
                         <ul style={{textAlign: "left", width: "75%"}}>
                             {exp[selected].work.map((w, index)=>(
-                                <li key={index}>{w}</li>
+                                <li key={index}><p>{w}</p></li>
                             ))}
                         </ul>
 
