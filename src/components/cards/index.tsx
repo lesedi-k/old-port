@@ -23,7 +23,8 @@ export const Card: CardComponent = ({Name, Description, img, link, gitHub}) => {
                 margin: "1% 1%" ,
                 textAlign: "center",
                 width: "100%",
-                height: "70vh",
+                height: "40vw",
+                minHeight: "fit-content",
                 boxShadow: "inset 2px 2px 4px rgba(0, 0, 0, 0.1)",
                 
             }}
@@ -50,18 +51,18 @@ export const Card: CardComponent = ({Name, Description, img, link, gitHub}) => {
                 }}
             >
                 {img === "" && <h1 style={{fontSize: "20pt"}}>More coming soon...</h1> } 
-                <h1 style={{fontSize: "50pt"}}>{Name}</h1>
-                <h3 style={{fontWeight: 300 }}> {Description} </h3>
+                <h1>{Name}</h1>
+                <h4 style={{fontWeight: 300 }}> {Description} </h4>
 
                 <div style={{marginTop: "1%"}}>
                     {gitHub && 
                         <a 
                             href={gitHub}
-                            style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "14pt"}}
+                            style={{ display: 'inline-flex', alignItems: 'center'}}
                         >
                             <img
                             src={githubIcon}
-                            width={40}
+                            width={"45vw"}
                             alt="Github Icon"
                             style={{filter:"invert(100%)"}}
                             />
@@ -71,11 +72,11 @@ export const Card: CardComponent = ({Name, Description, img, link, gitHub}) => {
                     {link !== "" &&
                         <a 
                             href={link}
-                            style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "14pt"}}
+                            style={{ display: 'inline-flex', alignItems: 'center' }}
                         >
                             <img
                             src={redirectIcon}
-                            width={40}
+                            width={"45vw"}
                             alt="Rediect"
                             style={{marginLeft:20, marginRight:10, filter:"invert(100%)"}}
                             />

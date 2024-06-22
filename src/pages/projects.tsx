@@ -70,7 +70,8 @@ export default function Projects() {
         <div 
             className={`${styles.blackTopRightBottomLeft}`}
             style={{alignItems: "center", textAlign:"center", 
-                paddingTop: 80, width:"100%", height: "100vh", 
+                paddingTop: 80, width:"100%", height: "fit-content",
+                paddingBottom: 60, 
             }}
         >
             <div> {/* Div here for animation reasons */}
@@ -84,14 +85,13 @@ export default function Projects() {
                             loop={true}
                             modules={[EffectCoverflow, Navigation, Autoplay]}
                             spaceBetween={-100}
-                            width={1000}
-                            height={"auto"}
+                            // height={10}
                             slidesPerView={1}
                             effect="coverflow"
-                            centeredSlides={false}
+                            centeredSlides={true}
                             coverflowEffect={{
                                 rotate: 30, 
-                                stretch: 0,
+                                stretch: 1,
                                 depth: 100, 
                                 modifier: 1, 
                                 slideShadows: false,
@@ -105,10 +105,11 @@ export default function Projects() {
                                 disableOnInteraction: false,
                                 pauseOnMouseEnter: true,
                             }}
-                            onSlideChange={() => console.log('slide change')}
+                            onSlideChange={() => console.log()}
                             onSwiper={() => console.log()}    
                             style={{
-                                width: "80%",
+                                width: "75%",
+                                height: "1%",
                             }}            
                         >
                         {projects.map((e, index) => (
@@ -123,8 +124,8 @@ export default function Projects() {
                             </SwiperSlide>    
                         ))}
                         </Swiper>
-                        <div className="swiper-button-next" style={{marginRight: "2%"}}/>
-                        <div className="swiper-button-prev" style={{marginLeft: "2%"}}/>
+                        <div className="swiper-button-next" style={{marginRight: "2%", color: "rgba(255,255,255,0.5)"}}/>
+                        <div className="swiper-button-prev" style={{marginLeft: "2%", color: "rgba(255,255,255,0.5)"}}/>
                     </div>
             </div>
         </div>
