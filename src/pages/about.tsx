@@ -17,7 +17,7 @@ export default function About() {
         <div 
             className={`${styles.blackTopRightBottomLeft}`}
             style={{display: "flex", 
-                    width: "100%", height: "96vh", zIndex: 1,
+                    width: "100%", height: "96vh", zIndex: 1
                 }}
         >
             <div 
@@ -25,21 +25,23 @@ export default function About() {
                 style={{
                         display: "flex", 
                         flexDirection: "column",
-                        marginInline:"15%", 
+                        marginInline:"7%", 
                     }}
             >
                 <code className={styles.typewriter} style={{marginTop: "30%"}}> Website Developed by</code>
                 <h1 style={{ width: "100%"}}>Lesedi Kereteletswe</h1>
                 <h2 style={{ color:"#9f9f9f", marginBottom: 10}}>Software Engineer</h2>
 
-                <div style={{marginBottom: 20}}>
+                <div 
+                    style={{display: "flex", marginBottom: 20}}
+                >
                     <a
                         href="https://www.linkedin.com/in/lesedi-kereteletswe/"
-                        style={{ display: 'inline-flex', alignItems: 'center' , fontSize: "14pt"}}
+                        style={{ display: 'flex', alignItems: 'center' , fontSize: "14pt"}}
                     >
                         <img
                         src={LinkedInIcon}
-                        width={30}
+                        width={"30vw"}
                         alt="LinkedIn Icon"
                         style={{marginRight:10}}
                         />
@@ -75,7 +77,9 @@ export default function About() {
             
             {/* Absolute Divs */}
             <div 
-                className={`${styles.cardBlur} ${styles.cardGrad} ${styles.glassLines} ${styles.slideLeft} 
+                className={`
+                            ${styles.cardBlur} ${styles.cardGrad} 
+                            ${styles.glassLines} ${styles.slideLeft} 
                             ${styles.storyCard} ${styles.aboutCard}`}
             >
                 <h3>Skills & Tools</h3>
@@ -96,15 +100,15 @@ export default function About() {
 
             <div 
                 className={`${styles.cardBlur} ${styles.cardGrad} ${styles.glassLines} ${styles.slideLeft} 
-                    ${styles.aboutCard} ${styles.skillsCard}`
+                    ${styles.aboutCard} ${styles.skillsCard} ${styles.hideOnSuperMobile}`
                 }
             >
                 <h3> Building a Product is Like Telling a Story</h3>
                 <p> 
-                I view a product as a story evolving with each user interaction,
+                I view a product as a story that evolves with each user interaction, 
                 line of code, and decision, creating a dynamic narrative of innovation 
-                and progress shaped by the challenges it overcomes, the solutions 
-                it provides, and the lives it impacts.
+                and progress, shaped by the challenges it overcomes, the solutions it 
+                provides, and the lives it impacts.
                 </p>
             </div>
             

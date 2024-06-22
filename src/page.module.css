@@ -536,7 +536,6 @@
 }
 
 
-
 @media screen and (max-width: 1024px) {
   .headerBar {
       width: 80%;
@@ -691,19 +690,32 @@
       margin-left: -5px;
   }
 
+  .flexSwapSuperRC {
+    flex-direction: column;
+  }
+
+
   .hideOnMobile {
     display: none;
   }
 
+  .hideOnSuperMobile {
+    display: none;
+  }
+
+  .aboutBioDiv {
+    padding-top:70px;
+  }
+
   .storyCard {
-    right: 80vw; 
-    bottom: 10%;
-    width: 50vw;
+    right: 78vw; 
+    bottom: 17%;
+    width: 95vw;
   }
 
   .skillsCard {
-    right: 60vw; 
-    top: 160px;
-    width: 60vw;
+    right: 70vw; 
+    top: 100px;
+    width: 90vw;
   }
 }

@@ -18,6 +18,9 @@
 }
 
 :root {
+  --swiper-height: auto;
+  --swiper-direction: horizontal;
+  --slides-per-view: 1;
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -118,7 +121,7 @@ h3 {
   margin-inline:100
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
     p {
       font-size: 11pt;
     }
@@ -151,7 +154,13 @@ h3 {
 }
 
 /* Small screens (large phones) */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  :root {
+    --swiper-height: 300; /* Define the height variable */
+    --swiper-direction: vertical;
+    --slides-per-view: 3;
+  } 
+
   p {
     font-size: 10pt;
   }
@@ -185,9 +194,15 @@ h3 {
 
 
 /* Extra small screens (small phones) */
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
+  :root {
+    --swiper-height: 300; /* Define the height variable */
+    --swiper-direction: vertical;
+    --slides-per-view: 4;
+  } 
+
   p {
-    font-size: 11pt;
+    font-size: 10pt;
   }
   h1 {
     font-size: 30pt;
@@ -198,7 +213,7 @@ h3 {
   }
 
   h3 {
-    font-size: 13pt;
+    font-size: 12pt;
   }
 
   h4 {

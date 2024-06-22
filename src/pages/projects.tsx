@@ -1,4 +1,3 @@
-'use client'
 import styles from "../page.module.css"
 
 import { Card } from "../components/cards";
@@ -65,18 +64,20 @@ export default function Projects() {
         },
         
     ]
-    
+
+    const direction = getComputedStyle(document.documentElement).getPropertyValue('--swiper-direction')
+    const height = getComputedStyle(document.documentElement).getPropertyValue('--swiper-height')
+    const slidesPerView = getComputedStyle(document.documentElement).getPropertyValue('--slides-per-view')
+
     return (
         <div 
             className={`${styles.blackTopRightBottomLeft}`}
             style={{alignItems: "center", textAlign:"center", 
-                paddingTop: 80, width:"100%", height: "fit-content",
-                paddingBottom: 60, 
+                paddingTop: 80, width:"100%", height: "fill-contents", 
             }}
         >
             <div> {/* Div here for animation reasons */}
                 <h1>Projects</h1>
-
                 <div style={{display:"flex", textAlign:"left", marginTop: 20,
                             justifyContent:"center", scrollbarWidth: "none", width: "100%",
                     }}>
@@ -84,11 +85,13 @@ export default function Projects() {
                             initialSlide={0}
                             loop={true}
                             modules={[EffectCoverflow, Navigation, Autoplay]}
-                            spaceBetween={-100}
-                            // height={10}
-                            slidesPerView={1}
+                            spaceBetween={-50}
+                            height={height}
+                            direction={direction}
+                            slidesPerView={slidesPerView}
                             effect="coverflow"
                             centeredSlides={true}
+
                             coverflowEffect={{
                                 rotate: 30, 
                                 stretch: 1,
@@ -124,8 +127,8 @@ export default function Projects() {
                             </SwiperSlide>    
                         ))}
                         </Swiper>
-                        <div className="swiper-button-next" style={{marginRight: "2%", color: "rgba(255,255,255,0.5)"}}/>
-                        <div className="swiper-button-prev" style={{marginLeft: "2%", color: "rgba(255,255,255,0.5)"}}/>
+                        <div className="swiper-button-next" style={{marginRight: "2%", color: "rgba(255,255,255,0.5)", display: direction === "vertical" ? "none" : "block"}}/>
+                        <div className="swiper-button-prev" style={{marginRight: "2%", color: "rgba(255,255,255,0.5)", display: direction === "vertical" ? "none" : "block"}}/>
                     </div>
             </div>
         </div>
