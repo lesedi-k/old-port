@@ -103,7 +103,7 @@ export default function About() {
                     ${styles.aboutCard} ${styles.skillsCard} ${styles.hideOnSuperMobile}`
                 }
             >
-                <h3> Building a Product is Like Telling a Story</h3>
+                <h3> Products Tell Stories </h3>
                 <p> 
                 I view a product as a story that evolves with each user interaction, 
                 line of code, and decision, creating a dynamic narrative of innovation 
