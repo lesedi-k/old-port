@@ -24,7 +24,7 @@ export default function Projects() {
             Name: "Stas Finance",
             Description: "Developed a personal finance management platform.",
             img: stas,
-            gitHub: "",
+            gitHub: "https://github.com/lesedi-k/crm",
             link: "https://stas-finance.vercel.app",
         },
         {
