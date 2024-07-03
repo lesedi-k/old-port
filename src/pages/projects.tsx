@@ -25,7 +25,7 @@ export default function Projects() {
             Description: "Developed a personal finance management platform.",
             img: stas,
             gitHub: "https://github.com/lesedi-k/crm",
-            link: "https://stas-finance.vercel.app",
+            link: "",
         },
         {
             Name: "MentorLink",
